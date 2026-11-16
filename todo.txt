@@ -1,0 +1,2926 @@
+# MASTER DEVELOPMENT PROMPT
+# CAR RENTAL MANAGEMENT ERP
+## Complete Car Rental, Self-Drive, Chauffeur-Driven & Fleet Management Software
+### Laravel + PHP + MySQL | Production-Ready Enterprise Application
+
+---
+
+# 1. PROJECT OVERVIEW
+
+Act as a senior Laravel software architect, car rental business consultant, fleet management specialist, vehicle operations expert, financial systems developer, database architect, and enterprise UI/UX designer.
+
+Your task is to design and develop a complete, production-ready Car Rental Management ERP using Laravel and MySQL.
+
+The application must manage the complete lifecycle of a car rental business, from vehicle registration and customer booking to vehicle allocation, rental agreement, vehicle handover, trip management, return inspection, billing, payment collection, maintenance, and fleet profitability.
+
+This must be a complete operational ERP, not simply a car listing website or online booking application.
+
+The system should support:
+
+1. Self-drive car rental.
+2. Chauffeur-driven car rental.
+3. Hourly car rental.
+4. Daily car rental.
+5. Weekly car rental.
+6. Monthly car rental.
+7. Long-term vehicle leasing.
+8. Airport pickup and drop.
+9. Railway station pickup and drop.
+10. Outstation rentals.
+11. Local city rentals.
+12. Corporate car rentals.
+13. Wedding and event rentals.
+14. Tourist vehicle rentals.
+15. Subscription-based rentals.
+16. Commercial fleet rentals.
+
+Primary market: India.
+
+Design the application for independent rental businesses, multi-branch rental agencies, travel companies, fleet operators, airport rental companies, and corporate vehicle rental providers.
+
+# 2. TECHNOLOGY STACK
+
+| Component | Technology |
+|---|---|
+| Backend | Latest stable Laravel |
+| Programming Language | PHP 8.3+ |
+| Database | MySQL 8+ |
+| Frontend | Laravel Blade |
+| Interactive UI | Livewire |
+| CSS | Tailwind CSS |
+| JavaScript | Alpine.js |
+| Charts | Chart.js |
+| Authentication | Laravel Authentication |
+| Authorization | Role-Based Access Control |
+| PDF | DomPDF or compatible library |
+| Excel | Laravel Excel |
+| Queue | Laravel Queue |
+| Cache | Redis where available |
+| API | Laravel REST API |
+| Version Control | Git |
+
+Use stable and compatible versions of all dependencies.
+
+The application must be deployable on a standard Linux VPS with Nginx or Apache.
+
+# 3. APPLICATION ARCHITECTURE
+
+Build a modular architecture with the following major business divisions:
+
+1. Fleet Management.
+2. Vehicle Rental Booking.
+3. Customer Management.
+4. Driver Management.
+5. Rental Operations.
+6. Vehicle Handover and Return.
+7. Billing and Payments.
+8. Maintenance Management.
+9. Insurance and Compliance.
+10. Fleet Expenses.
+11. Corporate Rental Management.
+12. Reports and Analytics.
+13. Customer Portal.
+14. Driver Portal.
+15. Public Booking Website.
+16. Financial Accounting.
+
+Support multiple companies, branches, parking locations, vehicle yards, and warehouses.
+
+Design the architecture to be SaaS-ready with strict company-level data isolation.
+
+# 4. MAIN APPLICATION NAVIGATION
+
+Create the following sidebar navigation:
+
+1. Dashboard
+2. Bookings
+   - New Booking
+   - Booking Calendar
+   - Pending Bookings
+   - Confirmed Bookings
+   - Active Rentals
+   - Completed Rentals
+   - Cancelled Bookings
+3. Fleet Management
+   - All Vehicles
+   - Add Vehicle
+   - Vehicle Categories
+   - Vehicle Brands
+   - Vehicle Models
+   - Vehicle Availability
+   - Vehicle Allocation
+   - Vehicle Documents
+   - Vehicle Locations
+4. Customers
+5. Drivers
+6. Rental Agreements
+7. Vehicle Handover
+8. Vehicle Returns
+9. Trip Management
+10. Pricing & Packages
+11. Rental Extensions
+12. Damage Management
+13. Security Deposits
+14. Payments & Invoices
+15. Corporate Clients
+16. Maintenance & Repairs
+17. Insurance Management
+18. Fuel Management
+19. Expenses
+20. Suppliers
+21. Employee Management
+22. Branch Management
+23. Reports & Analytics
+24. Notifications
+25. Accounts & Finance
+26. User Management
+27. Settings
+
+Use permission-based navigation.
+
+# 5. COMPANY AND BRANCH MANAGEMENT
+
+## 5.1 Company Profile
+
+Fields:
+
+- Company name.
+- Logo.
+- Registration number.
+- GSTIN.
+- PAN.
+- Business type.
+- Contact number.
+- Email.
+- Website.
+- Registered address.
+- State.
+- City.
+- PIN code.
+- Bank details.
+- Invoice prefix.
+- Agreement prefix.
+- Booking prefix.
+- Financial year.
+- Currency.
+- Tax settings.
+
+## 5.2 Branch Management
+
+Support multiple rental locations.
+
+Fields:
+
+- Branch name.
+- Branch code.
+- Address.
+- Contact number.
+- Branch manager.
+- GSTIN.
+- Operating hours.
+- Vehicle parking capacity.
+- Vehicle pickup location.
+- Vehicle return location.
+- Assigned employees.
+- Assigned drivers.
+- Branch status.
+
+Features:
+
+- Branch-wise fleet.
+- Branch-wise bookings.
+- Branch-wise revenue.
+- Branch-wise expenses.
+- Branch-wise availability.
+- Branch-wise profitability.
+
+## 5.3 Pickup and Return Locations
+
+Allow multiple locations:
+
+- Main showroom.
+- Airport.
+- Railway station.
+- Hotel.
+- Customer address.
+- Corporate office.
+- Branch location.
+- Custom location.
+
+Support location-specific pickup and drop charges.
+
+# 6. USER MANAGEMENT AND ROLE-BASED ACCESS CONTROL
+
+Create comprehensive user management.
+
+## 6.1 Predefined Roles
+
+1. Super Administrator.
+2. Company Administrator.
+3. Business Owner.
+4. Branch Manager.
+5. Booking Manager.
+6. Booking Executive.
+7. Fleet Manager.
+8. Fleet Executive.
+9. Driver Manager.
+10. Driver.
+11. Operations Manager.
+12. Vehicle Inspector.
+13. Maintenance Manager.
+14. Accountant.
+15. Cashier.
+16. Customer Relationship Executive.
+17. Corporate Account Manager.
+18. Customer.
+19. Auditor.
+
+Allow custom roles.
+
+## 6.2 Permissions
+
+Control:
+
+- Vehicle registration.
+- Vehicle availability.
+- Booking creation.
+- Booking confirmation.
+- Rental price modification.
+- Discounts.
+- Vehicle allocation.
+- Driver assignment.
+- Rental agreement creation.
+- Vehicle handover.
+- Vehicle return.
+- Deposit refunds.
+- Damage charges.
+- Invoice generation.
+- Payment collection.
+- Maintenance approval.
+- Expense approval.
+- Financial reports.
+
+Implement branch-level access restrictions.
+
+# 7. FLEET AND VEHICLE MANAGEMENT
+
+This is one of the most important modules.
+
+## 7.1 Vehicle Registration
+
+Fields:
+
+- Vehicle ID.
+- Registration number.
+- Manufacturer.
+- Brand.
+- Model.
+- Variant.
+- Vehicle category.
+- Manufacturing year.
+- Registration year.
+- Fuel type.
+- Transmission.
+- Engine capacity.
+- Engine number.
+- Chassis number.
+- VIN.
+- Color.
+- Seating capacity.
+- Luggage capacity.
+- Current odometer.
+- Insurance company.
+- Insurance policy number.
+- Insurance expiry.
+- PUC expiry.
+- Fitness certificate expiry where applicable.
+- Permit expiry where applicable.
+- Road tax details where applicable.
+- Vehicle owner.
+- Purchase date.
+- Purchase price.
+- Finance status.
+- EMI details where applicable.
+- Vehicle photographs.
+- RC document.
+- Insurance documents.
+- Fitness certificate.
+- Permit documents.
+
+Support:
+
+- Hatchback.
+- Sedan.
+- SUV.
+- MUV.
+- Luxury Car.
+- Premium Car.
+- Sports Car.
+- Electric Car.
+- Hybrid Car.
+- Commercial Vehicle.
+- Tempo Traveller.
+- Other configurable categories.
+
+## 7.2 Vehicle Profile
+
+Every vehicle should have a dedicated profile.
+
+Display:
+
+- Vehicle details.
+- Registration information.
+- Current availability.
+- Current rental status.
+- Booking history.
+- Customer history.
+- Driver history.
+- Rental revenue.
+- Expenses.
+- Maintenance history.
+- Accident history.
+- Damage history.
+- Insurance details.
+- Permit details.
+- Service reminders.
+- Odometer history.
+- Fuel history.
+- Vehicle photographs.
+- Profitability.
+
+## 7.3 Vehicle Status
+
+- Available.
+- Reserved.
+- Booking Confirmed.
+- Ready for Pickup.
+- On Rent.
+- Return Pending.
+- Inspection Pending.
+- Maintenance.
+- Repair.
+- Accident Hold.
+- Insurance Hold.
+- Inactive.
+- Sold.
+
+## 7.4 Vehicle Categories
+
+Allow configurable vehicle categories.
+
+Example:
+
+| Category | Example |
+|---|---|
+| Economy | Alto, WagonR |
+| Hatchback | Swift, i20 |
+| Sedan | Dzire, Honda City |
+| SUV | Creta, Seltos |
+| Premium SUV | Fortuner |
+| Luxury | BMW, Mercedes |
+| Electric | Nexon EV |
+| Commercial | Innova, Tempo Traveller |
+
+## 7.5 Vehicle Availability
+
+Calculate availability using:
+
+- Existing confirmed bookings.
+- Active rentals.
+- Vehicle maintenance.
+- Inspection status.
+- Branch location.
+- Reservation holds.
+- Vehicle operating restrictions.
+
+Never allow overlapping confirmed reservations for the same vehicle unless an authorized override workflow exists.
+
+# 8. CUSTOMER MANAGEMENT
+
+Create a complete customer CRM.
+
+## 8.1 Customer Registration
+
+Fields:
+
+- Customer ID.
+- Customer type.
+- Full name.
+- Company name.
+- Mobile number.
+- Alternate number.
+- Email.
+- Address.
+- City.
+- State.
+- PIN code.
+- Date of birth.
+- PAN where required.
+- GSTIN for business customers.
+- Driving license number where relevant.
+- Driving license expiry.
+- Identity verification status.
+- Customer source.
+- Assigned employee.
+- Customer notes.
+- Customer status.
+
+## 8.2 Customer Categories
+
+- Individual.
+- Corporate.
+- Tourist.
+- Travel Agent.
+- Government.
+- Hotel.
+- Travel Company.
+- Fleet Partner.
+- Regular Customer.
+- VIP Customer.
+
+## 8.3 Customer Documents
+
+Allow secure uploads of:
+
+- Driving license.
+- Identity proof.
+- Address proof.
+- Passport where applicable.
+- Corporate documents.
+- GST certificate.
+- Other required documents.
+
+Record:
+
+- Document type.
+- Document number.
+- Upload date.
+- Expiry date.
+- Verification status.
+- Verified by.
+- Verification notes.
+
+Minimize sensitive document retention and apply access controls.
+
+## 8.4 Customer Profile
+
+Display:
+
+- Personal details.
+- Booking history.
+- Active rentals.
+- Completed rentals.
+- Cancelled bookings.
+- Invoices.
+- Payments.
+- Security deposits.
+- Refunds.
+- Damage claims.
+- Outstanding balances.
+- Complaints.
+- Customer feedback.
+- Communication history.
+
+# 9. DRIVER MANAGEMENT
+
+Support chauffeur-driven vehicle rentals.
+
+## 9.1 Driver Registration
+
+Fields:
+
+- Driver ID.
+- Full name.
+- Photograph.
+- Mobile number.
+- Email.
+- Address.
+- Driving license number.
+- Driving license type.
+- License expiry.
+- License verification.
+- Experience.
+- Languages.
+- Assigned branch.
+- Employment type.
+- Salary.
+- Per-day allowance.
+- Per-kilometer allowance.
+- Bank details.
+- Emergency contact.
+- Employment status.
+
+## 9.2 Driver Categories
+
+- Full-time driver.
+- Part-time driver.
+- Contract driver.
+- Freelance driver.
+- Outstation driver.
+- Airport transfer driver.
+
+## 9.3 Driver Availability
+
+Track:
+
+- Available.
+- Assigned.
+- On Trip.
+- Off Duty.
+- On Leave.
+- Unavailable.
+
+Prevent double assignment during overlapping trip schedules.
+
+## 9.4 Driver Assignment
+
+Assign drivers based on:
+
+- Booking.
+- Vehicle.
+- Pickup location.
+- Trip duration.
+- Driver availability.
+- Language preference.
+- Skills.
+- Branch.
+
+## 9.5 Driver Attendance and Payroll
+
+Features:
+
+- Daily attendance.
+- Shift management.
+- Trip allocation.
+- Trip completion.
+- Overtime.
+- Allowances.
+- Commission.
+- Salary.
+- Advances.
+- Deductions.
+- Monthly payroll reports.
+
+## 9.6 Driver Portal
+
+Drivers can:
+
+- Login.
+- View assigned trips.
+- View pickup information.
+- View customer contact details according to permissions.
+- Start trip.
+- End trip.
+- Record odometer.
+- Record fuel level.
+- Upload trip photographs.
+- Record expenses.
+- Report incidents.
+- Update trip status.
+
+# 10. RENTAL PRICING AND PACKAGE MANAGEMENT
+
+Create a flexible pricing engine.
+
+## 10.1 Pricing Models
+
+Support:
+
+- Hourly rental.
+- Daily rental.
+- Weekly rental.
+- Monthly rental.
+- Kilometer-based rental.
+- Fixed package.
+- Airport transfer.
+- Outstation package.
+- One-way rental.
+- Round-trip rental.
+- Corporate contract.
+- Long-term lease.
+- Subscription rental.
+
+## 10.2 Pricing Configuration
+
+For each vehicle or category configure:
+
+- Hourly rate.
+- 4-hour rate.
+- 8-hour rate.
+- 12-hour rate.
+- 24-hour rate.
+- Daily rate.
+- Weekly rate.
+- Monthly rate.
+- Per-kilometer rate.
+- Extra-hour charge.
+- Extra-kilometer charge.
+- Minimum rental duration.
+- Security deposit.
+- Driver charge.
+- Fuel policy.
+- Pickup fee.
+- Drop fee.
+- Airport surcharge.
+- Weekend surcharge.
+- Holiday surcharge.
+- Outstation charge.
+- Night charge.
+- Late return charge.
+
+## 10.3 Dynamic Pricing
+
+Allow configurable price changes based on:
+
+- Season.
+- Holidays.
+- Weekends.
+- Peak demand.
+- Vehicle availability.
+- Rental duration.
+- Location.
+- Advance booking period.
+- Customer category.
+
+Support minimum and maximum pricing controls.
+
+## 10.4 Pricing Packages
+
+Examples:
+
+- Local 4 Hours / 40 KM.
+- Local 8 Hours / 80 KM.
+- Local 12 Hours / 120 KM.
+- Airport Transfer.
+- Guwahati Local Package.
+- Guwahati to Shillong.
+- Guwahati to Kaziranga.
+- Guwahati to Tawang.
+- Weekly Package.
+- Monthly Package.
+
+Make packages configurable by branch and vehicle category.
+
+## 10.5 Rental Price Calculation
+
+Implement a central pricing service.
+
+Example:
+
+Base Rental
++ Extra Hours
++ Extra Kilometers
++ Driver Charges
++ Pickup Charges
++ Drop Charges
++ Applicable Surcharges
++ Optional Add-ons
+− Approved Discounts
++ Applicable Taxes
+= Total Rental Amount.
+
+Display a transparent price breakdown before booking confirmation.
+
+Persist the agreed price snapshot against the booking so future price changes do not alter confirmed reservations.
+
+# 11. BOOKING AND RESERVATION MANAGEMENT
+
+This is the core module.
+
+## 11.1 Booking Creation
+
+Fields:
+
+- Booking number.
+- Customer.
+- Vehicle category.
+- Selected vehicle.
+- Rental type.
+- Pickup date.
+- Pickup time.
+- Return date.
+- Return time.
+- Pickup location.
+- Return location.
+- Driver requirement.
+- Trip type.
+- Destination.
+- Expected distance.
+- Rental package.
+- Estimated price.
+- Security deposit.
+- Advance payment.
+- Payment status.
+- Booking source.
+- Special instructions.
+- Assigned booking executive.
+
+## 11.2 Booking Types
+
+- Self-drive.
+- Chauffeur-driven.
+- Local.
+- Outstation.
+- Airport Transfer.
+- Railway Transfer.
+- Hourly.
+- Daily.
+- Weekly.
+- Monthly.
+- Corporate.
+- Wedding/Event.
+- One-way.
+- Round-trip.
+
+## 11.3 Booking Status
+
+- Enquiry.
+- Draft.
+- Awaiting Approval.
+- Awaiting Payment.
+- Confirmed.
+- Vehicle Allocated.
+- Ready for Pickup.
+- Active.
+- Extension Requested.
+- Return Pending.
+- Completed.
+- Cancelled.
+- No Show.
+- Disputed.
+
+## 11.4 Booking Calendar
+
+Provide:
+
+- Daily calendar.
+- Weekly calendar.
+- Monthly calendar.
+- Vehicle-wise calendar.
+- Branch-wise calendar.
+- Driver-wise calendar.
+
+Show vehicle booking timelines.
+
+## 11.5 Availability Validation
+
+Before confirmation:
+
+1. Check vehicle availability.
+2. Check booking overlap.
+3. Check maintenance schedules.
+4. Check branch location.
+5. Check driver availability if required.
+6. Check vehicle document validity.
+7. Check customer eligibility.
+8. Calculate pricing.
+9. Check required deposit.
+10. Confirm booking.
+
+Use transaction-safe locking to prevent simultaneous bookings.
+
+## 11.6 Booking Sources
+
+- Website.
+- Mobile application.
+- WhatsApp.
+- Phone.
+- Walk-in.
+- Instagram.
+- Facebook.
+- Travel agent.
+- Hotel.
+- Corporate customer.
+- Referral.
+
+Generate booking source reports.
+
+# 12. SELF-DRIVE RENTAL MANAGEMENT
+
+Create a dedicated self-drive rental workflow.
+
+## 12.1 Eligibility Verification
+
+Check configurable requirements:
+
+- Minimum customer age.
+- Valid driving license.
+- License category.
+- License validity.
+- Identity verification.
+- Address verification.
+- Security deposit.
+- International driving permit where applicable.
+
+Do not automatically assume all licenses or customer profiles qualify.
+
+## 12.2 Self-Drive Rental Agreement
+
+Generate a digital agreement containing:
+
+- Rental company.
+- Customer.
+- Vehicle.
+- Registration number.
+- Chassis number.
+- Rental start.
+- Rental end.
+- Pickup location.
+- Return location.
+- Odometer at pickup.
+- Fuel level.
+- Rental amount.
+- Deposit.
+- Kilometre allowance.
+- Extra kilometer rate.
+- Late fee.
+- Damage policy.
+- Insurance terms.
+- Customer responsibilities.
+- Vehicle usage restrictions.
+- Signature fields.
+
+Make agreement templates configurable and subject to legal review.
+
+## 12.3 Self-Drive Controls
+
+- Driving license verification.
+- Customer identity verification.
+- Digital signature.
+- Vehicle handover.
+- Vehicle return.
+- Odometer tracking.
+- Fuel tracking.
+- Damage inspection.
+- Security deposit management.
+- Late return calculation.
+
+# 13. CHAUFFEUR-DRIVEN RENTAL MANAGEMENT
+
+Create a separate workflow for rentals with drivers.
+
+## 13.1 Trip Details
+
+- Customer.
+- Vehicle.
+- Driver.
+- Pickup address.
+- Destination.
+- Intermediate stops.
+- Trip date.
+- Pickup time.
+- Expected return.
+- Trip type.
+- Estimated distance.
+- Package.
+- Driver allowance.
+- Toll and parking policy.
+
+## 13.2 Trip Status
+
+- Scheduled.
+- Driver Assigned.
+- Vehicle Assigned.
+- Ready.
+- Started.
+- In Progress.
+- On Hold.
+- Completed.
+- Cancelled.
+
+## 13.3 Trip Tracking
+
+Record:
+
+- Start odometer.
+- End odometer.
+- Start time.
+- End time.
+- Actual distance.
+- Waiting time.
+- Additional stops.
+- Fuel expenses.
+- Toll expenses.
+- Parking expenses.
+- Driver expenses.
+- Customer remarks.
+
+## 13.4 Trip Settlement
+
+Calculate:
+
+- Base package.
+- Extra kilometers.
+- Extra hours.
+- Driver allowance.
+- Toll charges.
+- Parking charges.
+- Other approved expenses.
+- Discounts.
+- Tax.
+
+Generate trip settlement report.
+
+# 14. RENTAL AGREEMENTS AND DIGITAL DOCUMENTATION
+
+Create professional document generation.
+
+Documents:
+
+- Booking confirmation.
+- Rental agreement.
+- Vehicle handover report.
+- Vehicle return report.
+- Customer identity checklist.
+- Driving license verification report.
+- Security deposit receipt.
+- Payment receipt.
+- Damage report.
+- Trip sheet.
+- Vehicle delivery report.
+- Final invoice.
+
+Support:
+
+- PDF generation.
+- Digital signature integration.
+- Customer acknowledgment.
+- Document versioning.
+- Document expiry tracking.
+
+All signed documents must be stored securely and linked to the booking.
+
+# 15. VEHICLE HANDOVER MANAGEMENT
+
+Before giving the vehicle to the customer, complete a mandatory handover process.
+
+## 15.1 Handover Checklist
+
+Capture:
+
+- Booking number.
+- Customer.
+- Vehicle.
+- Registration number.
+- Pickup date and time.
+- Odometer.
+- Fuel level.
+- Battery charge for EV.
+- Exterior condition.
+- Interior condition.
+- Tire condition.
+- Spare tire.
+- Jack and toolkit.
+- Documents.
+- Keys.
+- Accessories.
+- Existing damages.
+- Vehicle photographs.
+- Inspector.
+- Customer acknowledgment.
+
+## 15.2 Damage Mapping
+
+Create a visual vehicle damage map.
+
+Allow the inspector to select:
+
+- Front.
+- Rear.
+- Left.
+- Right.
+- Roof.
+- Interior.
+
+Record scratches, dents, cracks, broken parts, and other damages.
+
+Allow multiple photographs for each damage.
+
+## 15.3 Handover Approval
+
+Do not start a rental until:
+
+- Required documents are verified.
+- Handover checklist is completed.
+- Rental agreement is signed.
+- Required advance and deposit conditions are satisfied.
+- Vehicle is marked ready.
+
+Allow authorized overrides with recorded reasons.
+
+# 16. VEHICLE RETURN MANAGEMENT
+
+Create a dedicated vehicle return workflow.
+
+## 16.1 Return Registration
+
+Capture:
+
+- Booking.
+- Customer.
+- Vehicle.
+- Actual return date.
+- Actual return time.
+- Return location.
+- End odometer.
+- Fuel level.
+- Battery level.
+- Return condition.
+- Return photographs.
+- Return inspector.
+
+## 16.2 Return Inspection
+
+Compare handover condition against return condition.
+
+Check:
+
+- New scratches.
+- New dents.
+- Glass damage.
+- Tire damage.
+- Interior damage.
+- Missing accessories.
+- Mechanical issues.
+- Fuel shortage.
+- Cleanliness.
+- Vehicle documents.
+- Keys.
+
+## 16.3 Additional Charges
+
+Calculate:
+
+- Extra hours.
+- Late return.
+- Extra kilometers.
+- Fuel shortage.
+- Cleaning fee.
+- Damage charges.
+- Missing accessories.
+- Tolls or penalties where contractually applicable.
+
+Every charge must have supporting evidence and a clear pricing rule.
+
+## 16.4 Return Workflow
+
+Return Initiated → Vehicle Received → Inspection Pending → Charges Calculated → Customer Settlement → Deposit Refund / Adjustment → Booking Completed → Vehicle Cleaning → Vehicle Available.
+
+If damage or mechanical problems are identified, place the vehicle on inspection or maintenance hold.
+
+# 17. RENTAL EXTENSION AND EARLY RETURN
+
+## 17.1 Rental Extension
+
+Allow customers to request extensions.
+
+Fields:
+
+- Booking.
+- Existing return time.
+- Requested return time.
+- Extension duration.
+- Additional amount.
+- Vehicle availability.
+- Approval.
+- Payment.
+
+Before approving an extension:
+
+- Check the next booking.
+- Check maintenance schedules.
+- Check vehicle availability.
+- Calculate additional charges.
+- Obtain required payment.
+
+Never silently extend a booking into another confirmed reservation.
+
+## 17.2 Early Return
+
+Support:
+
+- Early return date.
+- Early return time.
+- Actual usage.
+- Applicable refund policy.
+- Early termination charges.
+- Refund approval.
+
+# 18. SECURITY DEPOSIT MANAGEMENT
+
+Create a separate security deposit ledger.
+
+## 18.1 Deposit Collection
+
+Fields:
+
+- Booking.
+- Customer.
+- Vehicle.
+- Deposit amount.
+- Payment mode.
+- Transaction reference.
+- Collection date.
+- Receipt number.
+- Refund policy.
+
+## 18.2 Deposit Settlement
+
+At vehicle return:
+
+Deposit Received
+− Approved Damage Charges
+− Approved Late Fees
+− Other Contractual Charges
+= Refundable Deposit.
+
+Support:
+
+- Full refund.
+- Partial refund.
+- Deposit adjustment.
+- Refund pending.
+- Disputed deductions.
+
+Never treat a refundable security deposit as rental revenue.
+
+Maintain complete deposit transaction history.
+
+# 19. FUEL AND KILOMETER MANAGEMENT
+
+## 19.1 Fuel Tracking
+
+Capture fuel level at:
+
+- Vehicle pickup.
+- Vehicle return.
+- Refuelling.
+- Driver trip updates.
+- Maintenance.
+
+Fuel levels:
+
+- Empty.
+- 25%.
+- 50%.
+- 75%.
+- Full.
+
+Also support actual fuel quantity where available.
+
+## 19.2 Fuel Policy
+
+Configure:
+
+- Same-to-same.
+- Full-to-full.
+- Prepaid fuel.
+- Fuel included.
+- Customer pays actual usage.
+
+## 19.3 Kilometer Management
+
+Configure:
+
+- Unlimited kilometers.
+- Daily kilometer limit.
+- Weekly kilometer limit.
+- Monthly kilometer limit.
+- Total booking kilometer limit.
+
+Calculate extra kilometer charges automatically.
+
+Maintain odometer history for every vehicle.
+
+# 20. DAMAGE, ACCIDENT AND PENALTY MANAGEMENT
+
+## 20.1 Damage Registration
+
+Fields:
+
+- Damage ID.
+- Booking.
+- Vehicle.
+- Customer.
+- Damage date.
+- Damage location.
+- Damage description.
+- Photographs.
+- Estimated repair cost.
+- Actual repair cost.
+- Customer responsibility.
+- Insurance responsibility.
+- Status.
+
+## 20.2 Accident Management
+
+Track:
+
+- Accident date.
+- Location.
+- Driver/customer.
+- Vehicle.
+- Accident description.
+- Police report reference where applicable.
+- FIR document where applicable.
+- Insurance claim.
+- Surveyor.
+- Repair estimate.
+- Settlement.
+- Vehicle downtime.
+
+## 20.3 Traffic Penalty Management
+
+Track:
+
+- Challan number.
+- Vehicle.
+- Booking.
+- Date.
+- Penalty amount.
+- Violation type.
+- Customer responsibility.
+- Payment status.
+- Supporting documents.
+
+## 20.4 Dispute Management
+
+Support:
+
+- Customer dispute.
+- Damage dispute.
+- Deposit dispute.
+- Penalty dispute.
+- Late fee dispute.
+- Refund dispute.
+
+Maintain communication and resolution history.
+
+# 21. VEHICLE MAINTENANCE MANAGEMENT
+
+Build a complete fleet maintenance module.
+
+## 21.1 Maintenance Types
+
+- Periodic Service.
+- Engine Oil Change.
+- Brake Service.
+- Tire Replacement.
+- Battery Replacement.
+- AC Service.
+- Suspension Repair.
+- Engine Repair.
+- Electrical Repair.
+- Accident Repair.
+- Cleaning.
+- Detailing.
+- Fitness Inspection.
+
+## 21.2 Maintenance Scheduling
+
+Schedule based on:
+
+- Date.
+- Kilometer.
+- Rental count.
+- Operating hours.
+- Manufacturer service interval.
+
+## 21.3 Maintenance Work Orders
+
+Fields:
+
+- Work order number.
+- Vehicle.
+- Maintenance category.
+- Complaint.
+- Service provider.
+- Assigned mechanic.
+- Scheduled date.
+- Odometer.
+- Estimated cost.
+- Actual cost.
+- Spare parts.
+- Labour.
+- Status.
+
+## 21.4 Maintenance Status
+
+- Scheduled.
+- Due.
+- In Progress.
+- Awaiting Parts.
+- Completed.
+- Cancelled.
+
+## 21.5 Maintenance Alerts
+
+Generate alerts for:
+
+- Insurance expiry.
+- PUC expiry.
+- Fitness expiry.
+- Permit expiry.
+- Service due.
+- Tire replacement.
+- Battery replacement.
+- Vehicle inspection.
+- Vehicle document renewal.
+
+## 21.6 Vehicle Availability Integration
+
+Vehicles under maintenance must automatically become unavailable for conflicting bookings.
+
+# 22. INSURANCE AND COMPLIANCE MANAGEMENT
+
+Maintain vehicle-wise compliance records.
+
+## 22.1 Insurance Management
+
+Fields:
+
+- Vehicle.
+- Insurance company.
+- Policy number.
+- Policy type.
+- Start date.
+- Expiry date.
+- Insured declared value.
+- Premium.
+- Coverage details.
+- Document upload.
+
+## 22.2 Insurance Claims
+
+- Claim number.
+- Vehicle.
+- Accident.
+- Insurance provider.
+- Claim date.
+- Surveyor.
+- Claim amount.
+- Approved amount.
+- Settlement.
+- Status.
+
+## 22.3 Compliance Documents
+
+Track:
+
+- Registration Certificate.
+- Insurance.
+- PUC.
+- Fitness certificate where applicable.
+- State and national permits where applicable.
+- Road tax.
+- Driver license.
+- Commercial vehicle authorization where applicable.
+
+Use configurable expiry alerts and operational blocks.
+
+Do not mark a vehicle legally compliant based only on an uploaded document without appropriate verification.
+
+# 23. CUSTOMER CRM AND LOYALTY
+
+## 23.1 Customer Communication
+
+Maintain:
+
+- Call logs.
+- SMS.
+- Email.
+- WhatsApp.
+- Booking reminders.
+- Payment reminders.
+- Rental expiry notifications.
+- Return reminders.
+- Feedback.
+
+## 23.2 Automated Notifications
+
+Send notifications for:
+
+- Booking enquiry.
+- Booking confirmation.
+- Payment received.
+- Vehicle allocated.
+- Rental starting soon.
+- Vehicle pickup.
+- Rental extension.
+- Rental expiry.
+- Vehicle return.
+- Deposit refund.
+- Invoice.
+- Feedback request.
+
+## 23.3 Loyalty Program
+
+Support:
+
+- Loyalty points.
+- Membership tiers.
+- Referral rewards.
+- Repeat customer discounts.
+- Corporate customer discounts.
+- Promotional coupons.
+- Rental packages.
+
+## 23.4 Customer Feedback
+
+Collect:
+
+- Overall rating.
+- Vehicle condition.
+- Driver behavior.
+- Booking experience.
+- Customer support.
+- Suggestions.
+- Complaints.
+
+# 24. CORPORATE RENTAL MANAGEMENT
+
+Create a dedicated corporate rental module.
+
+## 24.1 Corporate Customer Registration
+
+Fields:
+
+- Company name.
+- GSTIN.
+- PAN.
+- Contact person.
+- Department.
+- Billing address.
+- Agreement details.
+- Credit limit.
+- Payment terms.
+- Contract validity.
+
+## 24.2 Corporate Contracts
+
+Support:
+
+- Monthly rental agreements.
+- Annual contracts.
+- Fixed monthly billing.
+- Per-kilometer billing.
+- Fixed daily rates.
+- Driver-inclusive contracts.
+- Dedicated vehicle allocation.
+- Replacement vehicle clauses.
+- Minimum billing commitment.
+
+## 24.3 Corporate Bookings
+
+Allow authorized corporate employees to request:
+
+- Vehicles.
+- Drivers.
+- Pickup.
+- Drop.
+- Travel schedule.
+- Department.
+- Cost center.
+
+## 24.4 Corporate Billing
+
+Support:
+
+- Monthly consolidated invoice.
+- Department-wise invoice.
+- Vehicle-wise billing.
+- Employee-wise billing.
+- Cost-center-wise billing.
+- Outstanding reports.
+
+# 25. TRAVEL AGENT AND HOTEL PARTNER MANAGEMENT
+
+Support external booking partners.
+
+## 25.1 Partner Registration
+
+- Partner name.
+- Contact details.
+- Company details.
+- Commission model.
+- Contract.
+- Payment terms.
+- Status.
+
+## 25.2 Partner Bookings
+
+Record:
+
+- Partner.
+- Customer.
+- Vehicle.
+- Rental.
+- Agreed price.
+- Partner commission.
+- Payment status.
+
+## 25.3 Partner Portal
+
+Allow approved partners to:
+
+- View available vehicles.
+- Submit bookings.
+- View booking status.
+- Track commissions.
+- View invoices.
+- View payment history.
+
+# 26. VEHICLE LOCATION AND GPS TRACKING
+
+Create an integration-ready GPS tracking module.
+
+## 26.1 GPS Data
+
+Where a compatible GPS device or authorized provider is connected, support:
+
+- Current location.
+- Latitude.
+- Longitude.
+- Speed.
+- Ignition status.
+- Distance travelled.
+- Trip history.
+- Geofence events.
+- Unauthorized movement alerts.
+
+## 26.2 Vehicle Location Dashboard
+
+Display vehicle locations on an interactive map.
+
+Show:
+
+- Available vehicles.
+- Active rentals.
+- Vehicles in maintenance.
+- Vehicles at pickup locations.
+- Vehicles at branches.
+
+## 26.3 GPS Alerts
+
+- Vehicle moving outside allowed region.
+- Unauthorized movement.
+- Geofence breach.
+- Excessive speed where supported.
+- Vehicle stopped for unusually long periods.
+
+GPS data must come from an actual connected device or provider. Do not fabricate location information.
+
+# 27. PUBLIC CAR RENTAL BOOKING WEBSITE
+
+Prepare a customer-facing website integrated with the ERP.
+
+## 27.1 Public Website Pages
+
+- Home.
+- Available Cars.
+- Vehicle Details.
+- Self-Drive Rentals.
+- Chauffeur-Driven Rentals.
+- Airport Transfer.
+- Outstation Trips.
+- Monthly Rentals.
+- Corporate Rentals.
+- Pricing.
+- Offers.
+- About Us.
+- Contact.
+- Customer Login.
+- Booking Tracking.
+
+## 27.2 Vehicle Search
+
+Filters:
+
+- Pickup location.
+- Pickup date.
+- Return date.
+- Vehicle category.
+- Brand.
+- Fuel.
+- Transmission.
+- Seating capacity.
+- Price range.
+- Self-drive/chauffeur-driven.
+
+## 27.3 Vehicle Detail Page
+
+Display:
+
+- Vehicle photographs.
+- Specifications.
+- Rental pricing.
+- Availability.
+- Kilometer allowance.
+- Security deposit.
+- Included services.
+- Additional charges.
+- Rental conditions.
+- Booking button.
+
+## 27.4 Online Booking
+
+Workflow:
+
+1. Customer searches vehicles.
+2. Selects a vehicle.
+3. Selects rental dates.
+4. Selects pickup and return locations.
+5. Selects rental type.
+6. Adds optional services.
+7. Views price breakdown.
+8. Enters customer details.
+9. Completes eligibility verification.
+10. Pays advance or full amount.
+11. Receives booking confirmation.
+
+The booking engine must check actual availability before accepting payment and confirming reservations.
+
+# 28. CUSTOMER PORTAL
+
+Provide secure customer login.
+
+Customers can:
+
+- Manage profiles.
+- Upload documents.
+- Search vehicles.
+- View availability.
+- Book vehicles.
+- View rental agreements.
+- Download invoices.
+- View payment history.
+- Pay outstanding amounts.
+- Request extensions.
+- Track active bookings.
+- View return schedules.
+- Submit complaints.
+- Request refunds.
+- Provide feedback.
+
+Customers must only access their own records.
+
+# 29. BILLING, INVOICING AND PAYMENT MANAGEMENT
+
+Build a complete rental billing system.
+
+## 29.1 Invoice Components
+
+- Base rental.
+- Additional hours.
+- Extra kilometers.
+- Driver charges.
+- Pickup charges.
+- Drop charges.
+- Fuel charges.
+- Cleaning.
+- Damage charges.
+- Late return.
+- Toll.
+- Parking.
+- Other approved charges.
+- Discounts.
+- GST.
+
+## 29.2 Invoice Types
+
+- Rental Invoice.
+- Proforma Invoice.
+- Corporate Invoice.
+- Advance Receipt.
+- Payment Receipt.
+- Credit Note.
+- Debit Note.
+
+## 29.3 Payment Methods
+
+- Cash.
+- UPI.
+- Credit Card.
+- Debit Card.
+- Bank Transfer.
+- NEFT.
+- RTGS.
+- Cheque.
+- Payment Gateway.
+
+## 29.4 Payment Features
+
+- Advance payments.
+- Partial payments.
+- Full payments.
+- Multiple payment modes.
+- Payment allocation.
+- Refunds.
+- Payment links.
+- Outstanding balance.
+- Corporate credit.
+- Payment reconciliation.
+
+## 29.5 GST Configuration
+
+Support:
+
+- GSTIN.
+- CGST.
+- SGST.
+- IGST.
+- SAC.
+- Place of supply.
+- Taxable value.
+- Tax exemptions where applicable.
+
+Tax calculations must use configurable and legally reviewed rules. Do not hardcode a universal GST rate for all rental services.
+
+# 30. EXPENSE MANAGEMENT
+
+Create an integrated expense module.
+
+Categories:
+
+- Fuel.
+- Driver Salary.
+- Driver Allowance.
+- Vehicle Maintenance.
+- Repairs.
+- Insurance.
+- Road Tax.
+- Permit.
+- Parking.
+- Toll.
+- Vehicle Loan EMI.
+- Cleaning.
+- Vehicle Purchase.
+- Vehicle Depreciation.
+- Office Rent.
+- Electricity.
+- Marketing.
+- Transportation.
+- Other.
+
+Each expense should support:
+
+- Date.
+- Amount.
+- Category.
+- Vehicle.
+- Branch.
+- Booking.
+- Vendor.
+- Payment method.
+- Attachment.
+- Approval status.
+- Created by.
+
+# 31. FLEET PROFITABILITY AND VEHICLE COSTING
+
+Calculate vehicle-wise profitability.
+
+## 31.1 Vehicle Revenue
+
+- Rental revenue.
+- Extra kilometer revenue.
+- Extra-hour revenue.
+- Driver revenue.
+- Additional charges.
+- Other revenue.
+
+## 31.2 Vehicle Expenses
+
+- Fuel.
+- Maintenance.
+- Repairs.
+- Insurance.
+- Permits.
+- Driver salary allocation.
+- EMI.
+- Depreciation.
+- Cleaning.
+- Parking.
+- Tolls.
+- Other expenses.
+
+## 31.3 Profitability
+
+Calculate:
+
+Gross Operating Profit = Rental Revenue − Direct Operating Costs.
+
+Net Vehicle Profit = Total Revenue − Total Allocated Expenses.
+
+Also calculate:
+
+- Revenue per vehicle.
+- Revenue per rental day.
+- Utilization rate.
+- Average rental duration.
+- Cost per kilometer.
+- Profit per kilometer.
+- Downtime.
+- Maintenance cost ratio.
+- Return on vehicle investment.
+
+Provide vehicle-wise, branch-wise, category-wise, and company-wide profitability.
+
+Distinguish cash flow from accounting profit.
+
+# 32. ACCOUNTING AND FINANCIAL MANAGEMENT
+
+Implement double-entry accounting.
+
+## 32.1 Chart of Accounts
+
+Assets:
+
+- Cash.
+- Bank.
+- Accounts Receivable.
+- Vehicle Fleet.
+- Accumulated Depreciation.
+- Security Deposits Receivable.
+- Other Assets.
+
+Liabilities:
+
+- Customer Security Deposits Payable.
+- Accounts Payable.
+- GST Payable.
+- Loans.
+- Other Liabilities.
+
+Revenue:
+
+- Self-Drive Rental Revenue.
+- Chauffeur-Driven Rental Revenue.
+- Corporate Rental Revenue.
+- Additional Charges.
+- Other Income.
+
+Expenses:
+
+- Fuel.
+- Maintenance.
+- Repairs.
+- Driver Salary.
+- Insurance.
+- Vehicle Depreciation.
+- Permit.
+- EMI Interest.
+- Rent.
+- Marketing.
+- Administrative Expenses.
+
+## 32.2 Accounting Modules
+
+- Chart of Accounts.
+- Journal Entries.
+- General Ledger.
+- Customer Ledger.
+- Supplier Ledger.
+- Cash Book.
+- Bank Book.
+- Accounts Receivable.
+- Accounts Payable.
+- Trial Balance.
+- Profit and Loss.
+- Balance Sheet.
+- Cash Flow.
+- Bank Reconciliation.
+
+Enforce balanced journal entries.
+
+Posted entries must not be silently modified. Corrections must use auditable reversals.
+
+## 32.3 Security Deposit Accounting
+
+Treat refundable customer deposits as liabilities, not rental income.
+
+Track deposit collection, deductions, refunds, and outstanding obligations separately.
+
+# 33. DASHBOARDS AND BUSINESS INTELLIGENCE
+
+Create role-specific dashboards.
+
+## 33.1 Owner Dashboard
+
+Display:
+
+- Total fleet size.
+- Available vehicles.
+- Active rentals.
+- Today's bookings.
+- Today's revenue.
+- Monthly revenue.
+- Monthly expenses.
+- Net profit.
+- Outstanding payments.
+- Security deposits held.
+- Vehicle utilization.
+- Fleet profitability.
+- Upcoming maintenance.
+- Expiring insurance.
+- Branch performance.
+
+## 33.2 Booking Dashboard
+
+Display:
+
+- New enquiries.
+- Pending bookings.
+- Confirmed bookings.
+- Today's pickups.
+- Today's returns.
+- Active rentals.
+- Overdue returns.
+- Cancelled bookings.
+- Booking conversion rate.
+
+## 33.3 Fleet Dashboard
+
+Display:
+
+- Total vehicles.
+- Available vehicles.
+- Reserved vehicles.
+- Vehicles on rent.
+- Vehicles under maintenance.
+- Vehicle downtime.
+- Utilization.
+- Revenue per vehicle.
+- Maintenance cost.
+
+## 33.4 Driver Dashboard
+
+Display:
+
+- Available drivers.
+- Assigned drivers.
+- Active trips.
+- Completed trips.
+- Pending assignments.
+- Driver attendance.
+- Driver performance.
+
+## 33.5 Financial Dashboard
+
+Display:
+
+- Rental collections.
+- Pending collections.
+- Refunds.
+- Deposits.
+- Expenses.
+- Cash balance.
+- Bank balance.
+- Corporate receivables.
+- Profit and loss.
+
+All metrics must come from real database records.
+
+# 34. REPORTS AND ANALYTICS
+
+Create a centralized reporting module.
+
+## 34.1 Booking Reports
+
+1. Booking Register.
+2. Daily Booking Report.
+3. Monthly Booking Report.
+4. Cancelled Booking Report.
+5. Booking Source Report.
+6. Booking Conversion Report.
+7. Rental Duration Report.
+8. Overdue Return Report.
+9. Vehicle-wise Booking Report.
+
+## 34.2 Fleet Reports
+
+1. Vehicle Register.
+2. Vehicle Availability.
+3. Vehicle Utilization.
+4. Vehicle Revenue.
+5. Vehicle Profitability.
+6. Vehicle Downtime.
+7. Vehicle Maintenance.
+8. Vehicle Ageing.
+9. Insurance Expiry.
+10. Permit Expiry.
+
+## 34.3 Customer Reports
+
+1. Customer Register.
+2. Customer Booking History.
+3. Repeat Customer Report.
+4. Customer Outstanding.
+5. Customer Lifetime Value.
+6. Customer Feedback.
+
+## 34.4 Driver Reports
+
+1. Driver Register.
+2. Driver Attendance.
+3. Driver Trip Report.
+4. Driver Allowance.
+5. Driver Salary.
+6. Driver Performance.
+
+## 34.5 Financial Reports
+
+1. Rental Sales Register.
+2. Payment Register.
+3. Deposit Register.
+4. Refund Register.
+5. Expense Register.
+6. Cash Book.
+7. Bank Book.
+8. Customer Ledger.
+9. Corporate Outstanding.
+10. GST Report.
+11. Profit and Loss.
+12. Balance Sheet.
+13. Vehicle-wise Profitability.
+
+## 34.6 Maintenance Reports
+
+1. Maintenance Due.
+2. Maintenance History.
+3. Vehicle Repair Costs.
+4. Service Provider Report.
+5. Maintenance Downtime.
+6. Vehicle Accident Report.
+
+Support filters and PDF, Excel, CSV export.
+
+# 35. NOTIFICATION AND AUTOMATION MANAGEMENT
+
+Create automated notifications.
+
+Events:
+
+- New booking.
+- Booking confirmation.
+- Payment received.
+- Vehicle allocation.
+- Pickup reminder.
+- Rental starting.
+- Rental ending.
+- Extension approval.
+- Return overdue.
+- Deposit refund.
+- Invoice generated.
+- Insurance expiry.
+- PUC expiry.
+- Permit expiry.
+- Maintenance due.
+- Driver assignment.
+- Customer feedback request.
+
+Channels:
+
+- In-app.
+- Email.
+- SMS.
+- WhatsApp Business API.
+
+Maintain notification and delivery logs.
+
+Use Laravel queues and scheduled tasks for reminders.
+
+# 36. BARCODE, QR CODE AND PRINTING
+
+Generate:
+
+- Vehicle QR code.
+- Booking QR code.
+- Rental agreement QR code.
+- Customer QR code.
+- Vehicle inspection QR code.
+
+Support printable:
+
+- Vehicle information sheet.
+- Booking receipt.
+- Rental agreement.
+- Handover checklist.
+- Return inspection.
+- Payment receipt.
+- Security deposit receipt.
+- Rental invoice.
+- Trip sheet.
+- Maintenance work order.
+- Driver trip sheet.
+
+# 37. API AND THIRD-PARTY INTEGRATIONS
+
+Create secure versioned REST APIs.
+
+Potential integrations:
+
+- Customer mobile app.
+- Driver mobile app.
+- Vehicle tracking providers.
+- GPS devices.
+- Payment gateways.
+- WhatsApp Business API.
+- SMS providers.
+- Email services.
+- Google Maps.
+- Route distance services.
+- Digital signature platforms.
+- Accounting applications.
+
+API features:
+
+- Authentication.
+- Booking creation.
+- Vehicle availability.
+- Vehicle search.
+- Customer registration.
+- Booking status.
+- Payment status.
+- Trip updates.
+- Driver assignments.
+- Vehicle locations where authorized.
+- Invoice retrieval.
+
+Do not claim integrations work until actual provider credentials and end-to-end tests confirm functionality.
+
+# 38. DATABASE ARCHITECTURE
+
+Design a normalized MySQL database with appropriate foreign keys, indexes, unique constraints, decimal precision, timestamps, and audit history.
+
+All applicable business records must include company and branch ownership.
+
+## 38.1 Core Tables
+
+- companies
+- branches
+- users
+- roles
+- permissions
+- employees
+- departments
+- activity_logs
+- audit_logs
+- approval_workflows
+- approval_requests
+
+## 38.2 Customer Tables
+
+- customers
+- customer_addresses
+- customer_contacts
+- customer_documents
+- customer_notes
+- customer_communications
+- customer_feedback
+- customer_complaints
+
+## 38.3 Vehicle Tables
+
+- vehicle_categories
+- vehicle_brands
+- vehicle_models
+- vehicle_variants
+- vehicles
+- vehicle_documents
+- vehicle_photos
+- vehicle_status_history
+- vehicle_locations
+- vehicle_odometer_readings
+- vehicle_fuel_logs
+- vehicle_compliance_records
+
+## 38.4 Driver Tables
+
+- drivers
+- driver_documents
+- driver_skills
+- driver_attendance
+- driver_shifts
+- driver_assignments
+- driver_trip_logs
+- driver_allowances
+- driver_salary_records
+- driver_expenses
+
+## 38.5 Booking Tables
+
+- bookings
+- booking_vehicles
+- booking_services
+- booking_addons
+- booking_status_history
+- booking_pricing_snapshots
+- booking_cancellations
+- booking_extensions
+- booking_followups
+
+## 38.6 Pricing Tables
+
+- rental_types
+- rental_rate_plans
+- rental_pricing_rules
+- rental_packages
+- rental_package_items
+- vehicle_category_rates
+- seasonal_rates
+- surcharge_rules
+- discount_rules
+- promotional_coupons
+
+## 38.7 Rental Operation Tables
+
+- rental_agreements
+- rental_agreement_documents
+- vehicle_handovers
+- vehicle_handover_checklists
+- vehicle_returns
+- vehicle_return_checklists
+- vehicle_damage_reports
+- vehicle_damage_photos
+- damage_charges
+- trip_records
+- trip_stops
+- trip_expenses
+- rental_settlements
+
+## 38.8 Deposit and Payment Tables
+
+- security_deposits
+- deposit_transactions
+- invoices
+- invoice_items
+- invoice_taxes
+- payments
+- payment_allocations
+- refunds
+- credit_notes
+- debit_notes
+
+## 38.9 Fleet Management Tables
+
+- vehicle_maintenance
+- maintenance_work_orders
+- maintenance_tasks
+- maintenance_parts
+- maintenance_expenses
+- vehicle_accidents
+- insurance_policies
+- insurance_claims
+- permit_records
+- compliance_reminders
+
+## 38.10 Corporate Tables
+
+- corporate_clients
+- corporate_contacts
+- corporate_contracts
+- corporate_contract_rates
+- corporate_bookings
+- corporate_billing_cycles
+- corporate_invoices
+- corporate_credit_limits
+
+## 38.11 Expense Tables
+
+- suppliers
+- expense_categories
+- expenses
+- expense_attachments
+- expense_approvals
+- vehicle_cost_ledgers
+
+## 38.12 Accounting Tables
+
+- chart_of_accounts
+- journal_entries
+- journal_entry_lines
+- accounting_periods
+- fiscal_years
+- cash_accounts
+- bank_accounts
+- bank_transactions
+- bank_reconciliations
+
+## 38.13 Location and GPS Tables
+
+- pickup_locations
+- return_locations
+- vehicle_gps_devices
+- vehicle_location_logs
+- geofences
+- gps_alerts
+
+## 38.14 Notification Tables
+
+- notification_templates
+- notifications
+- communication_logs
+- customer_notification_preferences
+
+## 38.15 System Tables
+
+- documents
+- attachments
+- document_versions
+- system_settings
+- integration_settings
+- api_tokens
+- webhook_logs
+- import_jobs
+- export_jobs
+
+Add additional tables and junction tables as needed.
+
+Document the final database relationships in DATABASE_SCHEMA.md and ER_DIAGRAM.md.
+
+# 39. IMPORTANT BUSINESS LOGIC AND VALIDATIONS
+
+These rules are mandatory.
+
+## 39.1 Vehicle Availability
+
+- One vehicle cannot have overlapping confirmed bookings.
+- Active rentals must block availability.
+- Maintenance must block availability.
+- Return inspection must be completed before a vehicle becomes available.
+- Vehicle documents must satisfy configured requirements.
+- Vehicle location must be considered when allocating bookings.
+- All availability checks must be transaction-safe.
+
+## 39.2 Booking Integrity
+
+- Every booking must have a customer.
+- Every confirmed booking must have a valid price snapshot.
+- Every booking must have pickup and return details.
+- Vehicle allocation must be validated.
+- Driver assignment must be validated.
+- Booking cancellation must preserve history.
+- Extensions must check future reservations.
+- Discounts above the authorized limit require approval.
+
+## 39.3 Rental Integrity
+
+- A rental cannot start without required handover completion.
+- A rental cannot be completed without a return record.
+- Odometer readings must be recorded.
+- Fuel levels must be recorded.
+- Damage must be documented.
+- Extra charges must have supporting evidence.
+- Security deposit refunds must be reconciled.
+- Vehicle status must be updated after settlement.
+
+## 39.4 Financial Integrity
+
+- Security deposits are liabilities, not income.
+- Every payment must be traceable.
+- Every refund must reference an original transaction.
+- Invoice totals must be calculated from line items.
+- Tax must follow configured rules.
+- Posted accounting entries must balance.
+- Financial records must not be silently deleted.
+
+## 39.5 Transaction Safety
+
+Use database transactions and locking for:
+
+- Booking confirmation.
+- Vehicle allocation.
+- Driver assignment.
+- Rental start.
+- Rental return.
+- Extension approval.
+- Deposit settlement.
+- Invoice generation.
+- Payment allocation.
+- Refunds.
+
+Use idempotency protection to prevent duplicate bookings and payments.
+
+# 40. UI/UX AND DESIGN SYSTEM
+
+Create a modern, premium SaaS-style interface.
+
+Design inspiration:
+
+- Zoho.
+- Odoo.
+- Modern fleet management applications.
+- Enterprise travel booking dashboards.
+
+Use:
+
+- Clean white background.
+- Light gray surfaces.
+- Professional typography.
+- Modern tables.
+- Clear status badges.
+- Consistent spacing.
+- Professional icons.
+- Responsive cards.
+- Modern charts.
+- Searchable dropdowns.
+- Interactive calendars.
+
+Avoid excessive gradients, unnecessary animations, and outdated admin templates.
+
+## 40.1 Required Screens
+
+1. Login.
+2. Owner Dashboard.
+3. Booking Dashboard.
+4. Booking Calendar.
+5. New Booking.
+6. Booking Details.
+7. Customer List.
+8. Customer Profile.
+9. Customer Registration.
+10. Vehicle List.
+11. Vehicle Registration.
+12. Vehicle Profile.
+13. Vehicle Availability.
+14. Vehicle Allocation.
+15. Vehicle Calendar.
+16. Driver List.
+17. Driver Profile.
+18. Driver Assignment.
+19. Driver Attendance.
+20. Pricing Plans.
+21. Rental Packages.
+22. Rental Agreement.
+23. Vehicle Handover.
+24. Handover Inspection.
+25. Active Rentals.
+26. Rental Extension.
+27. Vehicle Return.
+28. Return Inspection.
+29. Damage Management.
+30. Security Deposit.
+31. Invoice Management.
+32. Payment Collection.
+33. Refund Management.
+34. Trip Management.
+35. Maintenance Dashboard.
+36. Maintenance Work Order.
+37. Insurance Management.
+38. Corporate Clients.
+39. Corporate Contracts.
+40. Expenses.
+41. Fleet Reports.
+42. Booking Reports.
+43. Financial Reports.
+44. User Management.
+45. Role Management.
+46. Company Settings.
+47. Branch Settings.
+48. Customer Portal.
+49. Driver Portal.
+50. Public Booking Website.
+
+Every screen must have working database integration.
+
+# 41. SECURITY REQUIREMENTS
+
+Implement:
+
+- Secure authentication.
+- Password hashing.
+- CSRF protection.
+- SQL injection prevention.
+- XSS protection.
+- Server-side validation.
+- RBAC.
+- Branch-level data restrictions.
+- Secure file uploads.
+- Document access controls.
+- API authentication.
+- Rate limiting.
+- Session security.
+- Audit logs.
+- Secure customer data handling.
+
+Sensitive customer documents and driving license information must only be accessible to authorized employees.
+
+# 42. PERFORMANCE AND SCALABILITY
+
+Implement:
+
+- Database indexing.
+- Eloquent eager loading.
+- Pagination.
+- Optimized availability queries.
+- Booking conflict prevention.
+- Queues.
+- Redis caching where available.
+- Scheduled notifications.
+- Background exports.
+- PDF generation queues.
+- Database backups.
+- Error monitoring.
+
+Do not load large vehicle inventories or booking histories in a single request.
+
+# 43. DEMONSTRATION DATA
+
+Create a demo company.
+
+Company Name: ABC Car Rentals & Fleet Services.
+
+Generate:
+
+- 1 company.
+- 3 branches.
+- 30 vehicles.
+- 5 vehicle categories.
+- 20 customers.
+- 10 drivers.
+- 5 employees.
+- 10 rental pricing plans.
+- 10 rental packages.
+- 20 bookings.
+- 5 active rentals.
+- 10 completed rentals.
+- 5 upcoming bookings.
+- 10 vehicle maintenance records.
+- 5 insurance policies.
+- 10 expenses.
+- 10 invoices.
+- 10 payments.
+- 5 corporate clients.
+
+Include examples of:
+
+- Self-drive rentals.
+- Chauffeur-driven rentals.
+- Airport transfers.
+- Outstation trips.
+- Daily rentals.
+- Monthly rentals.
+- Corporate rentals.
+
+Ensure all sample records have realistic and consistent relationships.
+
+# 44. TESTING REQUIREMENTS
+
+Use PHPUnit or Pest.
+
+## 44.1 Unit Tests
+
+Test:
+
+- Rental price calculations.
+- Hourly calculations.
+- Daily calculations.
+- Weekly calculations.
+- Monthly calculations.
+- Extra kilometer calculations.
+- Late return calculations.
+- Driver allowance.
+- Discount calculations.
+- GST calculations.
+- Deposit settlement.
+- Refund calculations.
+- Vehicle utilization.
+- Vehicle profitability.
+
+## 44.2 Feature Tests
+
+Test:
+
+- Customer registration.
+- Vehicle registration.
+- Vehicle availability.
+- Booking creation.
+- Booking confirmation.
+- Payment collection.
+- Vehicle allocation.
+- Driver assignment.
+- Agreement generation.
+- Handover.
+- Rental start.
+- Rental extension.
+- Return inspection.
+- Damage recording.
+- Late fee calculation.
+- Deposit refund.
+- Invoice generation.
+- Maintenance scheduling.
+- Corporate billing.
+- Financial reports.
+- Role permissions.
+
+## 44.3 Critical End-to-End Test
+
+Simulate a complete self-drive rental:
+
+1. Register customer.
+2. Upload customer documents.
+3. Register vehicle.
+4. Configure rental pricing.
+5. Search available vehicles.
+6. Select rental dates.
+7. Create booking.
+8. Check vehicle availability.
+9. Calculate rental price.
+10. Collect advance.
+11. Confirm booking.
+12. Allocate vehicle.
+13. Generate rental agreement.
+14. Verify driving license.
+15. Complete handover inspection.
+16. Record odometer.
+17. Record fuel level.
+18. Capture photographs.
+19. Collect security deposit.
+20. Start rental.
+21. Extend rental if requested.
+22. Receive vehicle.
+23. Perform return inspection.
+24. Calculate extra kilometers.
+25. Calculate late charges if applicable.
+26. Record damages if applicable.
+27. Settle rental invoice.
+28. Deduct approved charges from deposit.
+29. Refund remaining deposit.
+30. Close booking.
+31. Update vehicle availability.
+32. Generate vehicle profitability report.
+
+## 44.4 Chauffeur-Driven Test
+
+Simulate:
+
+1. Customer booking.
+2. Vehicle allocation.
+3. Driver assignment.
+4. Trip sheet generation.
+5. Trip start.
+6. Odometer capture.
+7. Intermediate stops.
+8. Fuel and toll expense capture.
+9. Trip completion.
+10. Final distance calculation.
+11. Extra-hour calculation.
+12. Invoice generation.
+13. Payment collection.
+14. Driver allowance settlement.
+15. Vehicle profitability report.
+
+Verify every financial, operational, and vehicle availability transaction.
+
+# 45. DOCUMENTATION REQUIREMENTS
+
+Maintain these files:
+
+1. PROJECT_PLAN.md
+2. DATABASE_SCHEMA.md
+3. ER_DIAGRAM.md
+4. MODULE_STATUS.md
+5. DEVELOPMENT_LOG.md
+6. BUSINESS_RULES.md
+7. API_DOCUMENTATION.md
+8. TESTING_CHECKLIST.md
+9. INSTALLATION_GUIDE.md
+10. DEPLOYMENT_GUIDE.md
+11. USER_MANUAL.md
+12. RENTAL_WORKFLOW.md
+
+Update these documents throughout development.
+
+# 46. DEVELOPMENT PHASES
+
+Implement in the following order.
+
+## Phase 1: Foundation
+
+- Laravel setup.
+- MySQL setup.
+- Authentication.
+- Company.
+- Branches.
+- User management.
+- RBAC.
+- UI layout.
+- Dashboard foundation.
+
+## Phase 2: Master Data
+
+- Customers.
+- Vehicles.
+- Vehicle categories.
+- Brands.
+- Models.
+- Drivers.
+- Employees.
+- Locations.
+- Suppliers.
+
+## Phase 3: Fleet Management
+
+- Vehicle registration.
+- Vehicle profiles.
+- Vehicle documents.
+- Vehicle availability.
+- Vehicle location.
+- Vehicle status.
+- Vehicle calendar.
+
+## Phase 4: Pricing and Packages
+
+- Rental types.
+- Pricing plans.
+- Hourly rates.
+- Daily rates.
+- Weekly rates.
+- Monthly rates.
+- Package management.
+- Dynamic pricing.
+- Discounts.
+
+## Phase 5: Booking Management
+
+- Booking creation.
+- Availability checking.
+- Booking calendar.
+- Vehicle allocation.
+- Driver allocation.
+- Booking approval.
+- Booking confirmation.
+- Booking cancellation.
+
+## Phase 6: Rental Operations
+
+- Rental agreements.
+- Customer verification.
+- Handover.
+- Handover inspection.
+- Trip management.
+- Vehicle return.
+- Return inspection.
+- Rental extensions.
+- Damage management.
+
+## Phase 7: Deposit and Billing
+
+- Security deposits.
+- Rental invoices.
+- Payment collection.
+- Payment allocation.
+- Refunds.
+- Additional charges.
+- Corporate billing.
+
+## Phase 8: Fleet Maintenance
+
+- Maintenance schedules.
+- Work orders.
+- Repair tracking.
+- Insurance.
+- Compliance.
+- Fuel.
+- Vehicle downtime.
+
+## Phase 9: Driver Management
+
+- Driver portal.
+- Driver attendance.
+- Trip assignment.
+- Allowances.
+- Payroll.
+- Performance.
+
+## Phase 10: Finance
+
+- Expenses.
+- Vehicle costing.
+- Double-entry accounting.
+- Customer ledger.
+- Bank reconciliation.
+- Profit and loss.
+- Financial reports.
+
+## Phase 11: Advanced Features
+
+- Customer portal.
+- Public booking website.
+- GPS integration.
+- WhatsApp integration.
+- Payment gateway.
+- Corporate portal.
+- Travel agent portal.
+- Mobile APIs.
+
+## Phase 12: Testing and Deployment
+
+- Unit testing.
+- Feature testing.
+- End-to-end testing.
+- Security testing.
+- Performance optimization.
+- Database backup.
+- Production deployment.
+- Documentation.
+
+# 47. FINAL DEVELOPMENT RULES
+
+Follow these rules strictly:
+
+1. Inspect the existing project before making changes.
+2. Never overwrite existing functionality without understanding dependencies.
+3. Design the database before coding dependent modules.
+4. Every button must perform a real action.
+5. Every form must save validated information.
+6. Every dashboard metric must use actual database data.
+7. Every booking must use real vehicle availability.
+8. Prevent overlapping confirmed bookings.
+9. Every rental must have a documented handover and return.
+10. Every vehicle must have complete rental and maintenance history.
+11. Every payment must be traceable.
+12. Security deposits must be treated separately from revenue.
+13. Every refund must have an original transaction reference.
+14. Every additional charge must have a clear calculation and audit trail.
+15. Never use hardcoded production data.
+16. Never create dummy pages or placeholder modules.
+17. Use reusable services and components.
+18. Use database transactions for critical operations.
+19. Implement server-side authorization.
+20. Test each module before moving forward.
+21. Maintain project documentation.
+22. Do not silently delete financial or operational history.
+23. Use configurable business rules.
+24. Do not claim integrations work until actually tested.
+
+# 48. FINAL ACCEPTANCE CRITERIA
+
+The system is complete only when:
+
+- Fleet management works.
+- Vehicle availability works.
+- Customer management works.
+- Driver management works.
+- Pricing and packages work.
+- Booking management works.
+- Self-drive rental works.
+- Chauffeur-driven rental works.
+- Booking calendar works.
+- Vehicle allocation works.
+- Driver assignment works.
+- Rental agreements work.
+- Vehicle handover works.
+- Vehicle return works.
+- Rental extensions work.
+- Security deposit management works.
+- Damage management works.
+- Late fee calculation works.
+- Fuel and kilometer tracking work.
+- Invoice generation works.
+- Payment management works.
+- Refunds work.
+- Corporate rental works.
+- Maintenance works.
+- Insurance tracking works.
+- Driver trip management works.
+- Expense management works.
+- Vehicle profitability works.
+- Double-entry accounting works.
+- Reports and exports work.
+- Role permissions work.
+- Customer portal works.
+- Automated tests pass.
+- Installation and deployment documentation is complete.
+
+# 49. FIRST TASK — BEGIN DEVELOPMENT
+
+Before writing code:
+
+1. Analyze the complete requirements.
+2. Prepare the application architecture.
+3. Separate self-drive and chauffeur-driven workflows.
+4. Identify shared modules.
+5. Design the complete database.
+6. Prepare the ER diagram.
+7. Define the booking lifecycle.
+8. Define vehicle availability logic.
+9. Define rental pricing logic.
+10. Define vehicle handover and return logic.
+11. Define security deposit accounting.
+12. Define the financial transaction flow.
+13. Prepare the development roadmap.
+14. Prepare the testing strategy.
+
+Present the architecture and development plan first.
+
+Then immediately begin implementing Phase 1.
+
+Do not stop after documentation or dashboard design.
+
+Continue implementing module by module, testing each completed workflow before proceeding.
+
+FINAL OBJECTIVE:
+
+Build a complete, commercially usable Car Rental Management ERP that allows an automobile rental business to manage its complete fleet, customers, drivers, reservations, rental agreements, self-drive rentals, chauffeur-driven trips, vehicle handovers, returns, security deposits, billing, payments, maintenance, corporate contracts, and business profitability from one unified application.
