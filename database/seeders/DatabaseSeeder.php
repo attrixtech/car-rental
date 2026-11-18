@@ -616,5 +616,8 @@ class DatabaseSeeder extends Seeder
                 'is_active' => true,
             ]);
         }
+
+        // 14. Seed Extended Real-World Bookings
+        $this->call(BookingSeeder::class);
     }
 }
