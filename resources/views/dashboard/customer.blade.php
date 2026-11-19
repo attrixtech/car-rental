@@ -85,7 +85,7 @@
             </div>
 
             <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
-                <span class="text-slate-500">Need immediate roadside assistance? Contact 24/7 Helpline: +91 22 6789 4400</span>
+                <span class="text-slate-500">Need immediate roadside assistance? Contact 24/7 Helpline: xxxxx</span>
                 <a href="{{ route('operations.agreement.pdf', $activeBooking->id) }}" target="_blank" class="px-4 py-2 rounded-xl bg-indigo-50 text-indigo-700 font-bold hover:bg-indigo-100 transition inline-flex items-center">
                     Download Signed Agreement (PDF)
                 </a>

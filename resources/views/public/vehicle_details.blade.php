@@ -199,7 +199,7 @@
                         <div class="text-slate-400">Prefer phone reservation?</div>
                         <div class="font-bold text-white flex items-center justify-center gap-1.5">
                             <i data-lucide="phone-call" class="w-3.5 h-3.5 text-indigo-400"></i>
-                            <span>Call Dispatch Desk: +91 22 6789 4400</span>
+                            <span>Call Dispatch Desk: xxxxx</span>
                         </div>
                     </div>
                 </div>

@@ -26,7 +26,7 @@
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-100 space-y-1">
                 <span class="font-bold uppercase text-[10px] text-slate-400">Supplier Details</span>
                 <div class="font-bold text-slate-800 text-sm">{{ $invoice->company->name }}</div>
-                <div class="text-slate-600">GSTIN: <span class="font-mono font-semibold">{{ $invoice->company->gstin ?? '27AABCD1234E1Z5' }}</span></div>
+                <div class="text-slate-600">GSTIN: <span class="font-mono font-semibold">{{ $invoice->company->gstin ?? 'xxxxx' }}</span></div>
                 <div class="text-slate-500">{{ $invoice->company->address }}, {{ $invoice->company->city }}</div>
             </div>
 

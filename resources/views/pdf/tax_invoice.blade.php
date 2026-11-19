@@ -25,7 +25,7 @@
                 <td>
                     <div class="company-name">{{ $invoice->company->name ?? 'Agra Car Rental Service' }}</div>
                     <div>{{ $invoice->company->address }}, {{ $invoice->company->city }}</div>
-                    <div><strong>GSTIN:</strong> {{ $invoice->company->gstin ?? '27AABCD1234E1Z5' }} | <strong>PAN:</strong> {{ $invoice->company->pan ?? 'AABCD1234E' }}</div>
+                    <div><strong>GSTIN:</strong> {{ $invoice->company->gstin ?? 'xxxxx' }} | <strong>PAN:</strong> {{ $invoice->company->pan ?? 'AABCD1234E' }}</div>
                 </td>
                 <td style="text-align: right; vertical-align: top;">
                     <h2 style="margin: 0; color: #0f172a; font-size: 18px;">TAX INVOICE</h2>

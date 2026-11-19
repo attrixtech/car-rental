@@ -25,7 +25,7 @@
                 <td>
                     <div class="company-name">{{ $booking->company->name ?? 'Agra Car Rental Service' }}</div>
                     <div>{{ $booking->company->address ?? '307, Prateek Centre, Sanjay Place, Agra 282002' }}</div>
-                    <div>GSTIN: {{ $booking->company->gstin ?? '27AABCD1234E1Z5' }} | Contact: {{ $booking->company->phone ?? '+91 22 6789 4400' }}</div>
+                    <div>GSTIN: {{ $booking->company->gstin ?? 'xxxxx' }} | Contact: {{ $booking->company->phone ?? 'xxxxx' }}</div>
                 </td>
                 <td style="text-align: right; vertical-align: top;">
                     <h2 style="margin: 0; color: #4f46e5; font-size: 20px;">RENTAL AGREEMENT</h2>

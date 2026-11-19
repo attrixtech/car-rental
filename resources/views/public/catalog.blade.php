@@ -41,7 +41,7 @@
             Special Offer
         </span>
         <span>🎉 Book 3+ days & get 15% instant off on self-drive hatchbacks & SUVs. Use code <strong>DRIVE15</strong> at check-in.</span>
-        <span class="hidden md:inline text-indigo-200">| 📞 24/7 Helpline: +91 22 6789 4400</span>
+        <span class="hidden md:inline text-indigo-200">| 📞 24/7 Helpline: xxxxx</span>
     </div>
 
     <!-- Navigation Bar -->
@@ -895,7 +895,7 @@
                     Enterprise automobile rental and chauffeur fleet software engineered for self-drive freedom, airport transfers, and outstation luxury travel across India.
                 </p>
                 <div class="text-[11px] text-slate-500 font-mono">
-                    GSTIN: 09AABCA1234E1Z5 · CIN: U63030UP2021PTC359871
+                    GSTIN: xxxxx · CIN: xxxxx
                 </div>
             </div>
 
@@ -932,7 +932,7 @@
                 <div class="space-y-1 text-slate-300">
                     <div class="flex items-center gap-2">
                         <i data-lucide="phone" class="w-3.5 h-3.5 text-indigo-400"></i>
-                        <span>+91 562 400 1234</span>
+                        <span>xxxxx</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <i data-lucide="mail" class="w-3.5 h-3.5 text-sky-400"></i>

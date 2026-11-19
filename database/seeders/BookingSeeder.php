@@ -61,7 +61,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Rahul Varma',
                 'email' => 'rahul.varma@tcs.com',
-                'phone' => '+91 98205 11223',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1988-08-21',
                 'address' => 'A-402, Raheja Vistas, Chandivali, Powai',
@@ -74,7 +74,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Neha Kulkarni',
                 'email' => 'neha.kulkarni@infosys.com',
-                'phone' => '+91 97640 22334',
+                'phone' => 'xxxxx',
                 'gender' => 'Female',
                 'dob' => '1993-11-04',
                 'address' => 'B-12, Blue Ridge Township, Hinjewadi Phase 1',
@@ -87,7 +87,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Rajesh S. Iyer',
                 'email' => 'rajesh.iyer@tatamotors.com',
-                'phone' => '+91 98201 99887',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1982-04-12',
                 'address' => '14, Matunga East, Near Ruia College',
@@ -100,7 +100,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Ananya Sengupta',
                 'email' => 'ananya.sengupta@gmail.com',
-                'phone' => '+91 98300 77665',
+                'phone' => 'xxxxx',
                 'gender' => 'Female',
                 'dob' => '1995-02-18',
                 'address' => 'Tower 3, Lodha Park, Lower Parel',
@@ -113,7 +113,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Rohan Malhotra',
                 'email' => 'rohan.malhotra@ril.com',
-                'phone' => '+91 99200 44556',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1986-09-30',
                 'address' => 'Floor 18, Sea Face Chambers, Worli',
@@ -126,7 +126,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Priya Sundaram',
                 'email' => 'priya.sundaram@accenture.com',
-                'phone' => '+91 99801 33445',
+                'phone' => 'xxxxx',
                 'gender' => 'Female',
                 'dob' => '1991-07-25',
                 'address' => 'Villa 4, Hiranandani Estate, Ghodbunder Road',
@@ -139,7 +139,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Amitav Banerjee',
                 'email' => 'amitav.b@hdfcbank.com',
-                'phone' => '+91 98212 55443',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1984-12-15',
                 'address' => 'C-601, Kalpataru Riverside, Panvel',
@@ -152,7 +152,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Suresh R. Patel',
                 'email' => 'suresh.patel@patelchem.com',
-                'phone' => '+91 98250 88990',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1979-05-10',
                 'address' => '201, Diamond Plaza, Opera House',
@@ -165,7 +165,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Deepa Krishnan',
                 'email' => 'deepa.k@wipro.com',
-                'phone' => '+91 98400 66778',
+                'phone' => 'xxxxx',
                 'gender' => 'Female',
                 'dob' => '1994-03-29',
                 'address' => 'Flat 503, Magarpatta City, Hadapsar',
@@ -178,7 +178,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Harpreet Singh Dhillon',
                 'email' => 'harpreet.dhillon@gmail.com',
-                'phone' => '+91 98150 33221',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1987-10-14',
                 'address' => 'B-804, Oberoi Springs, Andheri West',
@@ -191,7 +191,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Gaurav Chauhan',
                 'email' => 'gaurav.chauhan@zomato.com',
-                'phone' => '+91 98110 55442',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1992-06-19',
                 'address' => 'Flat 12, Koregaon Park Plaza, Lane 7',
@@ -204,7 +204,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Tanvi Mathur',
                 'email' => 'tanvi.mathur@nykaa.com',
-                'phone' => '+91 99201 77889',
+                'phone' => 'xxxxx',
                 'gender' => 'Female',
                 'dob' => '1996-01-22',
                 'address' => 'Sea Breeze Apts, Bandra Bandstand',
@@ -217,7 +217,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Farhan Akhtar',
                 'email' => 'farhan.akhtar@excelent.com',
-                'phone' => '+91 98202 33119',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1985-03-08',
                 'address' => 'Hill View Bungalow, Pali Hill, Bandra West',
@@ -230,7 +230,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Meera Nambiar',
                 'email' => 'meera.nambiar@deloitte.com',
-                'phone' => '+91 98450 11992',
+                'phone' => 'xxxxx',
                 'gender' => 'Female',
                 'dob' => '1990-09-11',
                 'address' => 'A-1002, Rustomjee Elements, Upper Juhu',
@@ -243,7 +243,7 @@ class BookingSeeder extends Seeder
             [
                 'name' => 'Siddharth Rao',
                 'email' => 'siddharth.rao@microsoft.com',
-                'phone' => '+91 99490 88771',
+                'phone' => 'xxxxx',
                 'gender' => 'Male',
                 'dob' => '1989-12-03',
                 'address' => 'Floor 15, Vasant Oasis, Marol, Andheri East',
@@ -308,7 +308,7 @@ class BookingSeeder extends Seeder
             [
                 'code' => 'DRV-102',
                 'name' => 'Santosh G. More',
-                'phone' => '+91 98205 66771',
+                'phone' => 'xxxxx',
                 'license' => 'MH02 20100084912',
                 'badge' => 'BOM/TR/84912',
                 'city' => 'Mumbai',
@@ -318,7 +318,7 @@ class BookingSeeder extends Seeder
             [
                 'code' => 'DRV-103',
                 'name' => 'Ganesh S. Shinde',
-                'phone' => '+91 98205 66772',
+                'phone' => 'xxxxx',
                 'license' => 'MH12 20130094812',
                 'badge' => 'PNQ/TR/39182',
                 'city' => 'Pune',
@@ -328,7 +328,7 @@ class BookingSeeder extends Seeder
             [
                 'code' => 'DRV-104',
                 'name' => 'Abdul Karim Khan',
-                'phone' => '+91 98205 66773',
+                'phone' => 'xxxxx',
                 'license' => 'MH03 20080039182',
                 'badge' => 'BOM/TR/19284',
                 'city' => 'Mumbai',
@@ -338,7 +338,7 @@ class BookingSeeder extends Seeder
             [
                 'code' => 'DRV-105',
                 'name' => 'Sunil B. Jadhav',
-                'phone' => '+91 98205 66774',
+                'phone' => 'xxxxx',
                 'license' => 'MH04 20140028491',
                 'badge' => 'THN/TR/58192',
                 'city' => 'Thane',
@@ -348,7 +348,7 @@ class BookingSeeder extends Seeder
             [
                 'code' => 'DRV-106',
                 'name' => 'Mahendra Yadav',
-                'phone' => '+91 98205 66775',
+                'phone' => 'xxxxx',
                 'license' => 'MH01 20110048192',
                 'badge' => 'BOM/TR/48192',
                 'city' => 'Mumbai',

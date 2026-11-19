@@ -21,7 +21,7 @@
 
                 <div>
                     <label class="block font-semibold text-slate-700 mb-1">Mobile Phone Number *</label>
-                    <input type="text" name="phone" required placeholder="+91 98200 XXXXX" class="w-full px-3 py-2 rounded-xl border border-slate-300 focus:ring-2 focus:ring-indigo-600 focus:outline-none">
+                    <input type="text" name="phone" required placeholder="xxxxx" class="w-full px-3 py-2 rounded-xl border border-slate-300 focus:ring-2 focus:ring-indigo-600 focus:outline-none">
                 </div>
 
                 <div>
