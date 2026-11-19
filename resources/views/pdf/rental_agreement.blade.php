@@ -23,8 +23,8 @@
         <table style="width: 100%;">
             <tr>
                 <td>
-                    <div class="company-name">{{ $booking->company->name ?? 'DriveSphere Mobility Solutions Pvt. Ltd.' }}</div>
-                    <div>{{ $booking->company->address ?? 'Floor 4, Velocity Tower, Andheri East, Mumbai, India' }}</div>
+                    <div class="company-name">{{ $booking->company->name ?? 'Agra Car Rental Service' }}</div>
+                    <div>{{ $booking->company->address ?? '307, Prateek Centre, Sanjay Place, Agra 282002' }}</div>
                     <div>GSTIN: {{ $booking->company->gstin ?? '27AABCD1234E1Z5' }} | Contact: {{ $booking->company->phone ?? '+91 22 6789 4400' }}</div>
                 </td>
                 <td style="text-align: right; vertical-align: top;">
@@ -92,10 +92,10 @@
             <td>
                 <div>Renter's Digital / Physical Signature:</div>
                 <div style="margin-top: 25px; font-weight: bold;">{{ $booking->customer->name }}</div>
-                <div style="font-size: 9px; color: #64748b;">Accepted via DriveSphere Digital Dispatch Desk</div>
+                <div style="font-size: 9px; color: #64748b;">Accepted via thrumble.car-rental Digital Dispatch Desk</div>
             </td>
             <td>
-                <div>For DriveSphere Mobility Solutions Pvt. Ltd.:</div>
+                <div>For {{ $booking->company->name ?? 'Agra Car Rental Service' }}:</div>
                 <div style="margin-top: 25px; font-weight: bold;">Authorized Dispatch Officer</div>
                 <div style="font-size: 9px; color: #64748b;">{{ $booking->branch->name }}</div>
             </td>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In | WebotApp DriveSphere ERP</title>
+    <title>Sign In | thrumble.car-rental</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>body { font-family: 'Inter', sans-serif; }</style>
@@ -13,10 +13,10 @@
         <!-- Logo and Brand -->
         <div class="text-center mb-8">
             <div class="w-14 h-14 rounded-2xl bg-indigo-600 mx-auto flex items-center justify-center text-white font-extrabold text-2xl shadow-xl shadow-indigo-600/30">
-                WA
+                TC
             </div>
-            <h1 class="text-2xl font-bold text-white mt-4 tracking-tight">WebotApp DriveSphere ERP</h1>
-            <p class="text-sm text-slate-400 mt-1">Car Rental, Self-Drive, Chauffeur & Fleet Management</p>
+            <h1 class="text-2xl font-bold text-white mt-4 tracking-tight">thrumble.car-rental</h1>
+            <p class="text-sm text-slate-400 mt-1">Agra Car Rental Service · Fleet & Mobility ERP</p>
         </div>
 
         <!-- Login Card -->
@@ -31,7 +31,7 @@
                 @csrf
                 <div>
                     <label class="block text-xs font-semibold uppercase tracking-wider text-slate-700 mb-1.5">Email Address</label>
-                    <input type="email" name="email" value="{{ old('email', 'admin@drivesphere.com') }}" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
+                    <input type="email" name="email" value="{{ old('email', 'admin@agracarrental.in') }}" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:ring-2 focus:ring-indigo-600 focus:outline-none transition">
                 </div>
 
                 <div>
@@ -78,10 +78,15 @@
             </div>
         </div>
 
-        <div class="text-center mt-6">
-            <a href="{{ route('public.catalog') }}" class="text-xs text-indigo-400 hover:text-indigo-300 font-medium transition">
-                ← Explore Public Customer Car Catalog
-            </a>
+        <div class="text-center mt-6 space-y-2">
+            <div>
+                <a href="{{ route('public.catalog') }}" class="text-xs text-indigo-400 hover:text-indigo-300 font-medium transition">
+                    ← Explore Public Customer Car Catalog
+                </a>
+            </div>
+            <div class="text-[11px] text-slate-400">
+                Developed by <a href="https://www.attrixtech.com" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white underline">Attrix Technologies</a> · Marketing by <a href="https://www.infusionn.in" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-white underline">infusionn Pvt. Ltd.</a>
+            </div>
         </div>
     </div>
 </body>

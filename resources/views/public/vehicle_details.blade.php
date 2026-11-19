@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ $vehicle->model->brand->name }} {{ $vehicle->model->name }} | DriveSphere Mobility</title>
+    <title>{{ $vehicle->model->brand->name }} {{ $vehicle->model->name }} | thrumble.car-rental</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
                 <div class="w-8 h-8 rounded-xl bg-gradient-to-tr from-indigo-600 to-sky-500 flex items-center justify-center text-white font-bold text-sm shadow">
                     <i data-lucide="car" class="w-4 h-4"></i>
                 </div>
-                <div class="font-display font-bold text-base text-white tracking-tight">DriveSphere</div>
+                <div class="font-display font-bold text-base text-white tracking-tight">thrumble.car-rental</div>
             </a>
 
             <a href="{{ route('login') }}" class="px-3.5 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-slate-300 hover:text-white text-xs font-bold transition">

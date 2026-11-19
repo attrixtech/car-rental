@@ -23,7 +23,7 @@
         <table style="width: 100%;">
             <tr>
                 <td>
-                    <div class="company-name">{{ $invoice->company->name ?? 'DriveSphere Mobility Solutions Pvt. Ltd.' }}</div>
+                    <div class="company-name">{{ $invoice->company->name ?? 'Agra Car Rental Service' }}</div>
                     <div>{{ $invoice->company->address }}, {{ $invoice->company->city }}</div>
                     <div><strong>GSTIN:</strong> {{ $invoice->company->gstin ?? '27AABCD1234E1Z5' }} | <strong>PAN:</strong> {{ $invoice->company->pan ?? 'AABCD1234E' }}</div>
                 </td>
@@ -115,7 +115,7 @@
 
     <div class="footer">
         <p>This is a computer generated legal tax invoice issued in accordance with Section 31 of CGST Act, 2017.</p>
-        <p>DriveSphere Mobility Solutions Pvt. Ltd. · Registered Office: Andheri East, Mumbai 400069</p>
+        <p>{{ $invoice->company->name ?? 'Agra Car Rental Service' }} · Registered Office: 307, Prateek Centre, Sanjay Place, Agra 282002</p>
     </div>
 </body>
 </html>

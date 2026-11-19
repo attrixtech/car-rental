@@ -45,14 +45,14 @@ class AuthController extends Controller
     public function quickLogin(Request $request, string $role)
     {
         $emailMap = [
-            'admin' => 'admin@drivesphere.com',
-            'fleet' => 'fleet@drivesphere.com',
-            'staff' => 'staff@drivesphere.com',
-            'driver' => 'driver@drivesphere.com',
-            'customer' => 'customer@drivesphere.com',
+            'admin' => 'admin@agracarrental.in',
+            'fleet' => 'fleet@agracarrental.in',
+            'staff' => 'staff@agracarrental.in',
+            'driver' => 'driver@agracarrental.in',
+            'customer' => 'customer@agracarrental.in',
         ];
 
-        $email = $emailMap[$role] ?? 'admin@drivesphere.com';
+        $email = $emailMap[$role] ?? 'admin@agracarrental.in';
         $user = User::where('email', $email)->first();
 
         if ($user) {

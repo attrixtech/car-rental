@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Dashboard') | WebotApp DriveSphere ERP</title>
+    <title>@yield('title', 'Dashboard') | thrumble.car-rental</title>
     <!-- Tailwind CSS & Alpine & Chart.js -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +20,11 @@
             <div class="h-16 flex items-center px-6 bg-slate-950 border-b border-slate-800">
                 <div class="flex items-center space-x-3">
                     <div class="w-9 h-9 rounded-lg bg-indigo-600 flex items-center justify-center text-white font-extrabold text-base shadow-md">
-                        WA
+                        TC
                     </div>
                     <div>
-                        <h1 class="text-white font-extrabold text-sm tracking-wide">WebotApp ERP</h1>
-                        <p class="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">DriveSphere Fleet</p>
+                        <h1 class="text-white font-extrabold text-sm tracking-wide">thrumble.car-rental</h1>
+                        <p class="text-[10px] text-indigo-400 font-bold uppercase tracking-wider">Agra Car Rental Service</p>
                     </div>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                     </span>
                 </div>
                 <div class="text-slate-200 font-medium mt-1 truncate">{{ auth()->user()->name ?? 'User' }}</div>
-                <div class="text-[11px] text-slate-400">Mumbai CSMIA Hub · BOM-T2</div>
+                <div class="text-[11px] text-slate-400">Agra Sanjay Place Hub · AGR-HQ</div>
             </div>
 
             <!-- Role-Tailored Navigation Links -->
@@ -291,6 +291,18 @@
             <main class="flex-1 px-8 pb-12">
                 @yield('content')
             </main>
+
+            <!-- Footer Credits -->
+            <footer class="px-8 py-4 border-t border-slate-200 bg-white text-xs text-slate-500 flex flex-col sm:flex-row items-center justify-between gap-2">
+                <div>
+                    <span class="font-semibold text-slate-700">thrumble.car-rental</span> · Demo: Agra Car Rental Service, 307, Prateek Centre, Sanjay Place, Agra 282002
+                </div>
+                <div class="flex items-center gap-3">
+                    <span>Developed by <a href="https://www.attrixtech.com" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline font-medium">Attrix Technologies</a></span>
+                    <span class="text-slate-300">|</span>
+                    <span>Marketing by <a href="https://www.infusionn.in" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline font-medium">infusionn Pvt. Ltd.</a></span>
+                </div>
+            </footer>
         </div>
     </div>
     @stack('scripts')

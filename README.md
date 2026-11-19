@@ -1,8 +1,8 @@
-# 🚗 WebotApp DriveSphere ERP
+# 🚗 thrumble.car-rental
 ### Enterprise Car Rental, Self-Drive Fleet & Chauffeur Mobility Management System
 
 <p align="center">
-  <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="DriveSphere ERP Banner" width="100%" style="border-radius: 12px; max-height: 400px; object-fit: cover;" />
+  <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="thrumble.car-rental Banner" width="100%" style="border-radius: 12px; max-height: 400px; object-fit: cover;" />
 </p>
 
 <p align="center">
@@ -19,9 +19,9 @@
 
 ## 📖 Executive Summary
 
-**WebotApp DriveSphere ERP** is an automotive-grade, enterprise-ready Fleet & Car Rental Management ERP engineered with **Laravel 11, PHP 8.4, MySQL, Tailwind CSS, Alpine.js, and Chart.js**.
+**thrumble.car-rental** is an automotive-grade, enterprise-ready Fleet & Car Rental Management ERP engineered with **Laravel 11, PHP 8.4, MySQL, Tailwind CSS, Alpine.js, and Chart.js**.
 
-Designed specifically for automotive rental operations, self-drive rental companies, luxury chauffeur services, and multi-branch commercial fleet operators, DriveSphere ERP handles the complete vehicle lifecycle — from public customer booking to KYC digital onboarding, deposit escrow tracking, return settlement with automated damage deduction, and general ledger accounting.
+Designed specifically for automotive rental operations, self-drive rental companies, luxury chauffeur services, and multi-branch commercial fleet operators, **thrumble.car-rental** handles the complete vehicle lifecycle — from public customer booking to KYC digital onboarding, deposit escrow tracking, return settlement with automated damage deduction, and general ledger accounting.
 
 ---
 
@@ -107,8 +107,8 @@ Every stakeholder operates within a tailored workflow with dedicated navigation 
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/webotapp-academy/WebotApp-DriveSphere-ERP.git
-cd WebotApp-DriveSphere-ERP
+git clone https://github.com/thrumble/car-rental.git
+cd car-rental
 
 # 2. Install PHP backend dependencies
 composer install
@@ -148,17 +148,17 @@ The login page (`/login`) includes **1-Click Instant Demo Login Buttons** for ra
 
 | Role | Email Address | Password | Dedicated Portal |
 |---|---|---|---|
-| 👑 **Super Admin** | `admin@drivesphere.com` | `password123` | Executive Owner Dashboard |
-| 🚙 **Fleet Manager** | `fleet@drivesphere.com` | `password123` | Fleet & Maintenance Command |
-| 📋 **Counter Staff** | `staff@drivesphere.com` | `password123` | Counter Check-out & Return Operations |
-| 🚖 **Chauffeur** | `driver@drivesphere.com` | `password123` | Driver Duty & Trip Portal |
-| 👤 **Customer** | `customer@drivesphere.com` | `password123` | Customer Self-Service Portal |
+| 👑 **Super Admin** | `admin@agracarrental.in` | `password123` | Executive Owner Dashboard |
+| 🚙 **Fleet Manager** | `fleet@agracarrental.in` | `password123` | Fleet & Maintenance Command |
+| 📋 **Counter Staff** | `staff@agracarrental.in` | `password123` | Counter Check-out & Return Operations |
+| 🚖 **Chauffeur** | `driver@agracarrental.in` | `password123` | Driver Duty & Trip Portal |
+| 👤 **Customer** | `customer@agracarrental.in` | `password123` | Customer Self-Service Portal |
 
 ---
 
 ## 🧪 Automated Testing Suite
 
-DriveSphere ERP comes with a battle-tested test suite verifying availability buffers, GST computations, role authorization, and complete rental lifecycles.
+**thrumble.car-rental** comes with a battle-tested test suite verifying availability buffers, GST computations, role authorization, and complete rental lifecycles.
 
 ```bash
 php artisan test
@@ -202,7 +202,7 @@ php artisan test
 ## 🏛️ Project Directory Structure
 
 ```
-WebotApp-DriveSphere-ERP/
+thrumble.car-rental/
 ├── app/
 │   ├── Enums/                 # RentalStatus, VehicleStatus, BookingType, PaymentMethod
 │   ├── Http/
@@ -229,7 +229,8 @@ WebotApp-DriveSphere-ERP/
 
 ---
 
-## 📄 License & Ownership
+## 📄 Credits & Ownership
 
-Developed and maintained by **[WebotApp Academy](https://github.com/webotapp-academy)**.  
-Licensed for commercial and proprietary fleet operations under WebotApp Mobility Systems.
+- **Demo Company:** Agra Car Rental Service — 307, Prateek Centre, Sanjay Place, Agra 282002
+- **Developed by:** [Attrix Technologies](https://www.attrixtech.com)
+- **Marketing by:** [infusionn Pvt. Ltd.](https://www.infusionn.in)

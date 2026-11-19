@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DriveSphere Mobility | Premium Self-Drive Cars & Chauffeur Fleet India</title>
+    <title>thrumble.car-rental | Agra Car Rental Service — Self-Drive & Chauffeur Fleet</title>
     <meta name="description" content="Rent premium self-drive cars and chauffeur fleets in Mumbai, Pune, Delhi NCR and Bangalore. Zero deposit anxiety, verified sanitized fleet, 250+ km/day free and 24/7 roadside assistance.">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -54,7 +54,7 @@
                 </div>
                 <div>
                     <div class="font-display text-xl font-bold tracking-tight text-white flex items-center gap-1.5">
-                        DriveSphere <span class="text-xs px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 font-sans font-semibold">ERP</span>
+                        thrumble.car-rental <span class="text-xs px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-400 border border-indigo-500/30 font-sans font-semibold">ERP</span>
                     </div>
                     <p class="text-[10px] text-slate-400 font-medium tracking-wider uppercase">Enterprise Car Rentals · India</p>
                 </div>
@@ -72,7 +72,7 @@
                 </a>
                 <a href="#why-us" class="hover:text-indigo-400 transition flex items-center gap-1.5">
                     <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
-                    <span>Why DriveSphere</span>
+                    <span>Why Us</span>
                 </a>
                 <a href="#how-it-works" class="hover:text-indigo-400 transition flex items-center gap-1.5">
                     <i data-lucide="workflow" class="w-4 h-4 text-amber-400"></i>
@@ -114,7 +114,7 @@
                     <i data-lucide="tag" class="w-4 h-4 text-sky-400"></i> Rental Plans
                 </a>
                 <a @click="mobileMenu = false" href="#why-us" class="p-2 rounded-lg hover:bg-slate-900 text-white flex items-center gap-2">
-                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Why DriveSphere
+                    <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Why Us
                 </a>
                 <a @click="mobileMenu = false" href="#how-it-works" class="p-2 rounded-lg hover:bg-slate-900 text-white flex items-center gap-2">
                     <i data-lucide="workflow" class="w-4 h-4 text-amber-400"></i> How It Works
@@ -470,13 +470,13 @@
         </div>
     </section>
 
-    <!-- Why Choose DriveSphere Section -->
+    <!-- Why Choose thrumble.car-rental Section -->
     <section id="why-us" class="py-20 px-4 sm:px-6 bg-slate-900/50 border-y border-slate-800/80">
         <div class="max-w-7xl mx-auto space-y-12">
             <div class="text-center max-w-2xl mx-auto space-y-3">
                 <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Engineered for Excellence</span>
                 <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">
-                    Why Travel With DriveSphere?
+                    Why Travel With Agra Car Rental Service?
                 </h2>
                 <p class="text-sm text-slate-400">
                     We eliminate the frustration of car rentals with transparent pricing, zero deposit anxiety, and certified spotless cars.
@@ -558,7 +558,7 @@
         <div class="text-center max-w-2xl mx-auto space-y-3">
             <span class="text-xs font-bold uppercase tracking-widest text-indigo-400">Simple 4-Step Process</span>
             <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white">
-                How DriveSphere Works
+                How thrumble.car-rental Works
             </h2>
             <p class="text-sm text-slate-400">
                 From booking to key handover in under 3 minutes.
@@ -679,7 +679,7 @@
                         </span>
                         <h3 class="font-display text-2xl font-bold text-white">Airport Express Pickup</h3>
                         <p class="text-xs text-slate-400 leading-relaxed">
-                            Dedicated curbside delivery at Mumbai CSMIA T2, Pune, and Delhi Airport terminals.
+                            Dedicated curbside delivery at Agra Sanjay Place, Taj Ganj, Agra Cantt, and Delhi Airport terminals.
                         </p>
                         <div class="font-display text-3xl font-extrabold text-white pt-2">
                             ₹1,200 <span class="text-xs text-slate-400 font-sans font-normal">/ transfer onwards</span>
@@ -837,7 +837,7 @@
                         <i data-lucide="chevron-down" class="w-5 h-5 text-indigo-400 transition-transform" :class="faqOpen === 4 ? 'rotate-180' : ''"></i>
                     </button>
                     <div x-show="faqOpen === 4" x-collapse class="mt-3 text-xs text-slate-400 leading-relaxed border-t border-slate-800 pt-3">
-                        Yes! All DriveSphere vehicles carry valid All-India Commercial Tourism Permits and active FASTag stickers for electronic toll plaza clearance. You can freely drive across state lines (e.g., Maharashtra to Goa or Gujarat). Any state border entry taxes can be paid seamlessly via the state parivahan portal.
+                        Yes! All Agra Car Rental Service vehicles carry valid All-India Commercial Tourism Permits and active FASTag stickers for electronic toll plaza clearance. You can freely drive across state lines (e.g., Uttar Pradesh to Delhi NCR, Rajasthan, or Madhya Pradesh). Any state border entry taxes can be paid seamlessly via the state parivahan portal.
                     </div>
                 </div>
 
@@ -884,18 +884,18 @@
             <div class="space-y-4">
                 <div class="flex items-center gap-3">
                     <div class="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-bold text-base">
-                        DS
+                        TC
                     </div>
                     <div>
-                        <div class="font-display text-base font-bold text-white tracking-tight">DriveSphere Mobility</div>
-                        <p class="text-[10px] text-indigo-400 uppercase font-semibold">Car Rentals India</p>
+                        <div class="font-display text-base font-bold text-white tracking-tight">thrumble.car-rental</div>
+                        <p class="text-[10px] text-indigo-400 uppercase font-semibold">Agra Car Rental Service</p>
                     </div>
                 </div>
                 <p class="text-xs text-slate-400 leading-relaxed">
                     Enterprise automobile rental and chauffeur fleet software engineered for self-drive freedom, airport transfers, and outstation luxury travel across India.
                 </p>
                 <div class="text-[11px] text-slate-500 font-mono">
-                    GSTIN: 27AABCD1234E1Z5 · CIN: U63030MH2021PTC359871
+                    GSTIN: 09AABCA1234E1Z5 · CIN: U63030UP2021PTC359871
                 </div>
             </div>
 
@@ -903,12 +903,11 @@
             <div class="space-y-3">
                 <h4 class="font-bold uppercase tracking-wider text-white text-xs">Operating Hubs</h4>
                 <ul class="space-y-2 text-slate-400 text-xs">
-                    <li>📍 Mumbai CSMIA Airport Terminal 2 Hub</li>
-                    <li>📍 Mumbai Bandra West Corporate Office</li>
-                    <li>📍 Pune Hinjewadi IT Park Depot</li>
+                    <li>📍 Agra Sanjay Place Head Office (Prateek Centre)</li>
+                    <li>📍 Agra Taj Ganj / Fatehabad Road Hub</li>
+                    <li>📍 Agra Cantt Railway Station Hub</li>
                     <li>📍 Delhi IGI Airport Terminal 3 Hub</li>
-                    <li>📍 Bengaluru Indiranagar Mobility Center</li>
-                    <li>📍 Goa Dabolim & MOPA Airport Counters</li>
+                    <li>📍 Jaipur &amp; Mathura-Vrindavan Outstation Desk</li>
                 </ul>
             </div>
 
@@ -928,23 +927,29 @@
             <div class="space-y-3">
                 <h4 class="font-bold uppercase tracking-wider text-white text-xs">24/7 Roadside Support</h4>
                 <p class="text-xs text-slate-400">
-                    Velocity Tower, Western Express Highway, Andheri East, Mumbai, Maharashtra 400069
+                    Agra Car Rental Service, 307, Prateek Centre, Sanjay Place, Agra 282002
                 </p>
                 <div class="space-y-1 text-slate-300">
                     <div class="flex items-center gap-2">
                         <i data-lucide="phone" class="w-3.5 h-3.5 text-indigo-400"></i>
-                        <span>+91 22 6789 4400 / 4401</span>
+                        <span>+91 562 400 1234</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <i data-lucide="mail" class="w-3.5 h-3.5 text-sky-400"></i>
-                        <span>bookings@drivesphere.com</span>
+                        <span>bookings@agracarrental.in</span>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="max-w-7xl mx-auto pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-500">
-            <p>© {{ date('Y') }} DriveSphere Mobility Solutions Pvt. Ltd. All rights reserved.</p>
+            <div class="space-y-1 text-center sm:text-left">
+                <p>© {{ date('Y') }} thrumble.car-rental · Demo: Agra Car Rental Service. All rights reserved.</p>
+                <p>
+                    Developed by <a href="https://www.attrixtech.com" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 underline">Attrix Technologies</a>
+                    · Marketing by <a href="https://www.infusionn.in" target="_blank" rel="noopener noreferrer" class="text-indigo-400 hover:text-indigo-300 underline">infusionn Pvt. Ltd.</a>
+                </p>
+            </div>
             <div class="flex items-center gap-6">
                 <a href="#" class="hover:text-slate-300 transition">Privacy Policy</a>
                 <a href="#" class="hover:text-slate-300 transition">Terms & Rental Conditions</a>

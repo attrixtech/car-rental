@@ -33,7 +33,7 @@ class BookingSeeder extends Seeder
             return;
         }
 
-        $branchT2 = Branch::where('code', 'BOM-T2')->first() ?? Branch::first();
+        $branchT2 = Branch::where('code', 'AGR-HQ')->first() ?? Branch::first();
         $branchBandra = Branch::where('code', 'BOM-BAN')->first() ?? Branch::first();
         $branchPune = Branch::where('code', 'PNQ-HIN')->first() ?? Branch::first();
 

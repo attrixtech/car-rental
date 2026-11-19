@@ -37,11 +37,11 @@ Visit: `http://localhost:8000`
 
 | Role | Email | Password |
 |---|---|---|
-| **Super Admin** | `admin@drivesphere.com` | `password123` |
-| **Fleet Manager** | `fleet@drivesphere.com` | `password123` |
-| **Counter Staff** | `staff@drivesphere.com` | `password123` |
-| **Chauffeur** | `driver@drivesphere.com` | `password123` |
-| **Customer** | `customer@drivesphere.com` | `password123` |
+| **Super Admin** | `admin@agracarrental.in` | `password123` |
+| **Fleet Manager** | `fleet@agracarrental.in` | `password123` |
+| **Counter Staff** | `staff@agracarrental.in` | `password123` |
+| **Chauffeur** | `driver@agracarrental.in` | `password123` |
+| **Customer** | `customer@agracarrental.in` | `password123` |
 
 *(Note: The login screen also features 1-click instant login buttons for all roles).*
 
